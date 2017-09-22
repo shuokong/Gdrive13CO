@@ -50,19 +50,22 @@ import matplotlib.pyplot as plt
 vblue  = '(4.76,7.18)' 
 vgreen = '(7.29,9.60)'
 vred   = '(9.71,12.13)'
-aplpy.make_rgb_cube(list(reversed(['mom0_42_64_13co_pix_2_Tmb.fits', 'mom0_65_86_13co_pix_2_Tmb.fits', 'mom0_87_109_13co_pix_2_Tmb.fits'])), 'mom0_rgb_cube.fits')
-aplpy.make_rgb_image('mom0_rgb_cube.fits', 'mom0_rgb_cube.png')
-#aplpy.rgb.sk_make_rgb_image(list(reversed(['mom0_42_64_13co_pix_2_Tmb.fits', 'mom0_65_86_13co_pix_2_Tmb.fits', 'mom0_87_109_13co_pix_2_Tmb.fits'])), '13mom0range.pdf',str(vblue),str(vgreen),str(vred))
+#aplpy.make_rgb_cube(list(reversed(['mom0_42_64_13co_pix_2_Tmb.fits', 'mom0_65_86_13co_pix_2_Tmb.fits', 'mom0_87_109_13co_pix_2_Tmb.fits'])), 'mom0_rgb_cube.fits')
+#aplpy.make_rgb_image('mom0_rgb_cube.fits', 'mom0_rgb_cube.png')
+#aplpy.rgb.sk_make_rgb_image(list(reversed(['mom0_42_64_13co_pix_2_Tmb.fits', 'mom0_65_86_13co_pix_2_Tmb.fits', 'mom0_87_109_13co_pix_2_Tmb.fits'])), '13mom0range1.pdf',str(vblue),str(vgreen),str(vred))
+#sys.exit()
 
-ff = aplpy.FITSFigure('mom0_rgb_cube_2d.fits')
-#ff.set_theme('publication')
-ff.show_rgb('mom0_rgb_cube.png')
-ff.ticks.set_color('black')
+#ff = aplpy.FITSFigure('mom0_rgb_cube_2d.fits')
+ff = aplpy.FITSFigure('mom0_42_64_13co_pix_2_Tmb.fits')
+ff.set_theme('publication')
+#ff.show_rgb('mom0_rgb_cube.png')
+ff.show_grayscale()
+#ff.ticks.set_color('black')
 ff.tick_labels.set_font(size=8)
 ff.add_label(83.6,-6.84,vblue,color='b')
 ff.add_label(83.6,-6.84-0.05,vgreen,color='g')
 ff.add_label(83.6,-6.84-0.05*2.,vred,color='r')
-pdfname = '13mom0range.pdf'
+pdfname = '13mom0range2.pdf'
 os.system('rm '+pdfname)
 plt.savefig(pdfname,bbox_inches='tight')
 os.system('open '+pdfname)
