@@ -91,7 +91,7 @@ plt.ylabel(r'$\rm probability~density$')
 #h = plt.ylabel(r'$\rm \frac{d\tilde{N}}{\tilde{N}dlog(N/N_0)}$')
 #h.set_rotation(0)
 plt.xlabel(r'$\rm log(N/N_0)$')
-pdfname = 'coldesn13_pdf.pdf'
+pdfname = 'coldens13_pdf.pdf'
 os.system('rm '+pdfname)
 plt.savefig(pdfname)
 os.system('open '+pdfname)
