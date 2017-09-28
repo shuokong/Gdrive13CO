@@ -41,60 +41,67 @@ def gaussian_fit(xdata,ydata,yerr,pinit): # xdata,ydata,yerr n-element arrays, p
      
     return mu,muErr,sigma,sigmaErr
 
-hdu1 = fits.open('coldens13_thin.fits')[0]
+regionfiles = [['coldens13_thin.fits','','overall'],['north_coldens13_tauinte.fits','north','north'],['central_coldens13_tauinte.fits','central','central'],['south_coldens13_tauinte.fits','south','south'],['furthersouth_coldens13_tauinte.fits','furthersouth','further south']]
 
-coldensdata = hdu1.data[0,:,:]
-coldensdata_nonan = coldensdata[~np.isnan(coldensdata)]/1.e16 # normalized to 1.e16 cm-2
-#print coldensdata_nonan.shape
-pixcounts, = coldensdata_nonan.shape
-#print 'pixcounts',pixcounts
-#sys.exit()
-
-bins = np.logspace(-1, 2, num=100) # evenly distributed in log10 space
-bincenters = [(bins[ind]*bins[ind-1])**0.5 for ind in range(1,len(bins))] 
-#print bincenters
-bincenterslog = [np.log10(item) for item in bincenters] 
-binsize = bincenterslog[1]-bincenterslog[0]
-#print bincenterslog 
-hist = np.histogram(coldensdata_nonan, bins=bins, range=None, normed=False, weights=None, density=None) 
-corecounts = hist[0] 
-zeroind = np.where(corecounts==0) 
-nonzero_corecounts = np.delete(corecounts,zeroind) # zeros removed
-dN_over_NdlogN_error = np.array([item**0.5/float(pixcounts)/binsize for ind,item in enumerate(corecounts)])
-nonzero_dN_over_NdlogN_error = np.delete(dN_over_NdlogN_error,zeroind) # zeros removed
-dN_over_NdlogN = np.array([item/float(pixcounts)/binsize for ind,item in enumerate(corecounts)]) 
-#print 'corecounts',corecounts
-print 'dN_over_NdlogN',dN_over_NdlogN
-print 'dN_over_NdlogN_error',dN_over_NdlogN_error
-nonzero_dN_over_NdlogN = np.delete(dN_over_NdlogN,zeroind) # zeros removed
-nonzero_bincenterslog = np.delete(bincenterslog,zeroind) # zeros removed
-### 
-xdata = nonzero_bincenterslog
-ydata = nonzero_dN_over_NdlogN
-yerr = nonzero_dN_over_NdlogN_error
-#print xdata, ydata, yerr
-pinit = [1., 1.]
-mu,muErr,sigma,sigmaErr = gaussian_fit(xdata,ydata,yerr,pinit)
-###  
-p=plt.figure(figsize=(7,6))
-#plt.xscale('log') 
-#plt.xlim(0.05,200.) 
-#plt.yscale('log') 
-plt.subplots_adjust(top=0.94,bottom=0.13,left=0.13,right=0.96)
-ax=p.add_subplot(111)
-ax.errorbar(nonzero_bincenterslog, nonzero_dN_over_NdlogN, yerr=nonzero_dN_over_NdlogN_error, drawstyle='steps-mid', color='black') 
-ax.plot(bincenterslog, gaussian(bincenterslog,mu,sigma),'b--') #, label=r'$T_d'+str(tname)+r'\rm ,~\alpha='+mc.to_precision(abs(index),2)+r'$')
-#ax.text(0.1, 0.9, cmfpan,horizontalalignment='center',verticalalignment='center',transform = ax.transAxes,fontsize=14) 
-ax.legend()
-#ax.vlines(3.*rmscoremass,1,1e4,linestyles='dotted') 
-plt.ylabel(r'$\rm probability~density$')
-#h = plt.ylabel(r'$\rm \frac{d\tilde{N}}{\tilde{N}dlog(N/N_0)}$')
-#h.set_rotation(0)
-plt.xlabel(r'$\rm log(N/N_0)$')
-pdfname = 'coldens13_pdf.pdf'
-os.system('rm '+pdfname)
-plt.savefig(pdfname)
-os.system('open '+pdfname)
-#os.system('cp '+pdfname+os.path.expandvars(' ${DROPATH}/cloudc1'))
-plt.close(p)
+for ii in regionfiles:
+    ff,fname,region = ii
+    hdu1 = fits.open(ff)[0]
+    
+    coldensdata = hdu1.data[0,:,:]
+    temp = coldensdata[coldensdata>0]
+    coldensdata_nonan = temp[~np.isnan(temp)]#/1.e16 # normalized to 1.e16 cm-2
+    #print coldensdata_nonan.shape
+    pixcounts, = coldensdata_nonan.shape
+    #print 'pixcounts',pixcounts
+    #sys.exit()
+    
+    bins = np.logspace(13, 22, num=100) # evenly distributed in log10 space
+    bincenters = [(bins[ind]*bins[ind-1])**0.5 for ind in range(1,len(bins))] 
+    #print bincenters
+    bincenterslog = [np.log10(item) for item in bincenters] 
+    binsize = bincenterslog[1]-bincenterslog[0]
+    #print bincenterslog 
+    hist = np.histogram(coldensdata_nonan, bins=bins, range=None, normed=False, weights=None, density=None) 
+    corecounts = hist[0] 
+    zeroind = np.where(corecounts==0) 
+    nonzero_corecounts = np.delete(corecounts,zeroind) # zeros removed
+    nonzero_bincenters = np.delete(bincenters,zeroind) # zeros removed
+    dN_over_NdlogN_error = np.array([item**0.5/float(pixcounts)/binsize for ind,item in enumerate(corecounts)])
+    nonzero_dN_over_NdlogN_error = np.delete(dN_over_NdlogN_error,zeroind) # zeros removed
+    dN_over_NdlogN = np.array([item/float(pixcounts)/binsize for ind,item in enumerate(corecounts)]) 
+    #print 'corecounts',corecounts
+    #print 'dN_over_NdlogN',dN_over_NdlogN
+    #print 'dN_over_NdlogN_error',dN_over_NdlogN_error
+    nonzero_dN_over_NdlogN = np.delete(dN_over_NdlogN,zeroind) # zeros removed
+    nonzero_bincenterslog = np.delete(bincenterslog,zeroind) # zeros removed
+    ### 
+    xdata = nonzero_bincenterslog
+    ydata = nonzero_dN_over_NdlogN
+    yerr = nonzero_dN_over_NdlogN_error
+    #print xdata, ydata, yerr
+    pinit = [1., 1.]
+    #mu,muErr,sigma,sigmaErr = gaussian_fit(xdata,ydata,yerr,pinit)
+    ###  
+    p=plt.figure(figsize=(7,6))
+    plt.xscale('log') 
+    #plt.xlim(0.05,200.) 
+    plt.yscale('log') 
+    plt.subplots_adjust(top=0.94,bottom=0.13,left=0.13,right=0.96)
+    ax=p.add_subplot(111)
+    ax.errorbar(nonzero_bincenters, nonzero_dN_over_NdlogN, yerr=nonzero_dN_over_NdlogN_error, drawstyle='steps-mid', color='black') 
+    #ax.plot(bincenterslog, gaussian(bincenterslog,mu,sigma),'b--') #, label=r'$T_d'+str(tname)+r'\rm ,~\alpha='+mc.to_precision(abs(index),2)+r'$')
+    ax.text(0.1, 0.9, region,horizontalalignment='center',verticalalignment='center',transform = ax.transAxes,fontsize=12) 
+    ax.legend()
+    #ax.vlines(3.*rmscoremass,1,1e4,linestyles='dotted') 
+    plt.ylabel(r'$\rm probability~density$')
+    #h = plt.ylabel(r'$\rm \frac{d\tilde{N}}{\tilde{N}dlog(N/N_0)}$')
+    #h.set_rotation(0)
+    #plt.xlabel(r'$\rm log(N/N_0)$')
+    plt.xlabel(r'$\rm log(N)$')
+    pdfname = fname+'_coldens13_pdf.pdf'
+    os.system('rm '+pdfname)
+    plt.savefig(pdfname)
+    os.system('open '+pdfname)
+    os.system('cp '+pdfname+os.path.expandvars(' /Users/shuokong/GoogleDrive/imagesCARMAOrion/'))
+    plt.close(p)
 
