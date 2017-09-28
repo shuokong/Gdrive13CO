@@ -41,12 +41,14 @@ def gaussian_fit(xdata,ydata,yerr,pinit): # xdata,ydata,yerr n-element arrays, p
      
     return mu,muErr,sigma,sigmaErr
 
-regionfiles = [['coldens13_thin.fits','','overall'],['north_coldens13_tauinte.fits','north','north'],['central_coldens13_tauinte.fits','central','central'],['south_coldens13_tauinte.fits','south','south'],['furthersouth_coldens13_tauinte.fits','furthersouth','further south']]
+regionfiles = [['coldens13_thin.fits','overall','overall'],['north_coldens13_tauinte.fits','north','north'],['central_coldens13_tauinte.fits','central','central'],['south_coldens13_tauinte.fits','south','south'],['furthersouth_coldens13_tauinte.fits','furthersouth','further south']]
 
-for ii in regionfiles:
+p=plt.figure(figsize=(6,18))
+plt.subplots_adjust(top=0.99,bottom=0.03,left=0.11,right=0.97)
+p.subplots_adjust(hspace=0.001)
+for nn,ii in enumerate(regionfiles):
     ff,fname,region = ii
     hdu1 = fits.open(ff)[0]
-    
     coldensdata = hdu1.data[0,:,:]
     temp = coldensdata[coldensdata>0]
     coldensdata_nonan = temp[~np.isnan(temp)]#/1.e16 # normalized to 1.e16 cm-2
@@ -82,26 +84,29 @@ for ii in regionfiles:
     pinit = [1., 1.]
     #mu,muErr,sigma,sigmaErr = gaussian_fit(xdata,ydata,yerr,pinit)
     ###  
-    p=plt.figure(figsize=(7,6))
-    plt.xscale('log') 
-    #plt.xlim(0.05,200.) 
-    plt.yscale('log') 
-    plt.subplots_adjust(top=0.94,bottom=0.13,left=0.13,right=0.96)
-    ax=p.add_subplot(111)
+    ax=p.add_subplot(len(regionfiles),1,nn+1)
     ax.errorbar(nonzero_bincenters, nonzero_dN_over_NdlogN, yerr=nonzero_dN_over_NdlogN_error, drawstyle='steps-mid', color='black') 
     #ax.plot(bincenterslog, gaussian(bincenterslog,mu,sigma),'b--') #, label=r'$T_d'+str(tname)+r'\rm ,~\alpha='+mc.to_precision(abs(index),2)+r'$')
-    ax.text(0.1, 0.9, region,horizontalalignment='center',verticalalignment='center',transform = ax.transAxes,fontsize=12) 
+    ax.text(0.1, 0.9, region,horizontalalignment='left',verticalalignment='center',transform = ax.transAxes,fontsize=12) 
     ax.legend()
+    ax.tick_params(axis='both',which='both',direction='in',top='on')
     #ax.vlines(3.*rmscoremass,1,1e4,linestyles='dotted') 
     plt.ylabel(r'$\rm probability~density$')
+    if nn+1 < len(regionfiles):
+        plt.setp(ax.get_xticklabels(), visible=False)
+    else:
+        plt.xlabel(r'$\rm log(N)$')
     #h = plt.ylabel(r'$\rm \frac{d\tilde{N}}{\tilde{N}dlog(N/N_0)}$')
     #h.set_rotation(0)
     #plt.xlabel(r'$\rm log(N/N_0)$')
-    plt.xlabel(r'$\rm log(N)$')
-    pdfname = fname+'_coldens13_pdf.pdf'
-    os.system('rm '+pdfname)
-    plt.savefig(pdfname)
-    os.system('open '+pdfname)
-    os.system('cp '+pdfname+os.path.expandvars(' /Users/shuokong/GoogleDrive/imagesCARMAOrion/'))
-    plt.close(p)
+    plt.xscale('log') 
+    plt.xlim(1.e14,1.e20) 
+    plt.yscale('log') 
+
+pdfname = 'coldens13_pdf.pdf'
+os.system('rm '+pdfname)
+plt.savefig(pdfname)
+os.system('open '+pdfname)
+os.system('cp '+pdfname+os.path.expandvars(' /Users/shuokong/GoogleDrive/imagesCARMAOrion/'))
+plt.close(p)
 
