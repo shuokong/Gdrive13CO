@@ -6,7 +6,7 @@ hdu1 = fits.open('mom0_13co_pix_2_Tmb.fits')[0]
 hdu2 = fits.open('peak_13co_pix_2_Tmb.fits')[0]
 hdu3 = fits.open('regrid13_peak_12co_pix_2_Tmb.fits')[0]
 hdu4 = fits.open('peak_13co_pix_2_Tmb.fits')[0]
-hdu5 = fits.open('13co_pix_2_Tmb.fits')[0]
+hdu5 = fits.open('mask_13co_pix_2_Tmb.fits')[0]
 hdu6 = fits.open('13co_pix_2_Tmb_sens.fits')[0]
 
 mom013data = hdu1.data

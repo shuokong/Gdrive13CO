@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import fits
 
-tex = 0
+tex = 1
 coldens = 1
 
 if tex == 1:
@@ -53,7 +53,7 @@ if coldens == 1:
     ff = aplpy.FITSFigure(hdu1, figure=fig)
     ff.recenter(xcenter,ycenter,width=wid,height=hei) 
     ff.set_theme('publication')
-    ff.set_system_latex(True)
+    #ff.set_system_latex(True)
     maxcolor = np.nanmax(hdu1.data)
     ff.show_colorscale(cmap='gray_r', pmin=5, pmax=100, stretch='sqrt')
     ff.show_regions('olay.reg')

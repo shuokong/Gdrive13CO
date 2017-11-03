@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import fits
 
-mom0 = 0
-histogram = 1
+mom0 = 1
+histogram = 0
 
 hdu1 = fits.open('mom0_13co_pix_2_Tmb.fits')[0]
 
