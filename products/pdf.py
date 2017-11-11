@@ -41,7 +41,7 @@ def gaussian_fit(xdata,ydata,yerr,pinit): # xdata,ydata,yerr n-element arrays, p
      
     return mu,muErr,sigma,sigmaErr
 
-regionfiles = [['coldens13_thin.fits','overall','overall'],['north_coldens13_tauinte.fits','north','north'],['central_coldens13_tauinte.fits','central','central'],['south_coldens13_tauinte.fits','south','south'],['furthersouth_coldens13_tauinte.fits','furthersouth','further south']]
+regionfiles = [['coldens13_tauinte.fits','overall','overall'],['north_coldens13_tauinte.fits','north','north'],['central_coldens13_tauinte.fits','central','central'],['south_coldens13_tauinte.fits','south','south'],['furthersouth_coldens13_tauinte.fits','furthersouth','further south']]
 
 p=plt.figure(figsize=(6,18))
 plt.subplots_adjust(top=0.99,bottom=0.03,left=0.11,right=0.97)

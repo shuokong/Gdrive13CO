@@ -36,7 +36,7 @@ hdu2 = fits.open('coldens13_taupeak.fits')[0]
 hdu3 = fits.open('coldens13_tauinte.fits')[0]
 print hdu3.data.shape
 
-thin_pixnum = plothist(hdu1.data,'hist_coldens13_thin.pdf')
-taupeak_pixnum = plothist(hdu2.data,'hist_coldens13_taupeak.pdf')
+#thin_pixnum = plothist(hdu1.data,'hist_coldens13_thin.pdf')
+#taupeak_pixnum = plothist(hdu2.data,'hist_coldens13_taupeak.pdf')
 tauinte_pixnum = plothist(hdu3.data,'hist_coldens13_tauinte.pdf')
 
