@@ -12,7 +12,7 @@ rc('font', **font)
 def plothist(data,pdfname):
     xxx = data[~np.isnan(data)]
     xx = xxx[xxx<2.e16]
-    x = xx[xx>0]
+    x = xx[xx>1]
     p=plt.figure(figsize=(7,6))
     fig, ax = plt.subplots(1,1)
     # the histogram of the data
@@ -29,14 +29,17 @@ def plothist(data,pdfname):
     plt.savefig(pdfname,bbox_inches='tight')
     os.system('open '+pdfname)
     os.system('cp '+pdfname+os.path.expandvars(' /Users/shuokong/GoogleDrive/imagesCARMAOrion/'))
-    return len(x)
+    return len(x),len(xxx)
 
 hdu1 = fits.open('coldens13_thin.fits')[0]
 hdu2 = fits.open('coldens13_taupeak.fits')[0]
 hdu3 = fits.open('coldens13_tauinte.fits')[0]
 print hdu3.data.shape
+hdu4 = fits.open('tau13peak.fits')[0]
 
 #thin_pixnum = plothist(hdu1.data,'hist_coldens13_thin.pdf')
 #taupeak_pixnum = plothist(hdu2.data,'hist_coldens13_taupeak.pdf')
-tauinte_pixnum = plothist(hdu3.data,'hist_coldens13_tauinte.pdf')
+#tauinte_pixnum = plothist(hdu3.data,'hist_coldens13_tauinte.pdf')
+tau13peak_pixnum = plothist(hdu4.data,'hist_tau13peak.pdf')
+print tau13peak_pixnum
 

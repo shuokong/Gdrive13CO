@@ -90,7 +90,8 @@ for nn,ii in enumerate(regionfiles):
     ax.text(0.1, 0.9, region,horizontalalignment='left',verticalalignment='center',transform = ax.transAxes,fontsize=12) 
     ax.legend()
     ax.tick_params(axis='both',which='both',direction='in',top='on')
-    #ax.vlines(3.*rmscoremass,1,1e4,linestyles='dotted') 
+    #mmin,mmax = ax.get_ylim()
+    #ax.vlines(5.2e17,mmin,mmax,linestyles='dotted') 
     plt.ylabel(r'$\rm probability~density$')
     if nn+1 < len(regionfiles):
         plt.setp(ax.get_xticklabels(), visible=False)
@@ -100,7 +101,7 @@ for nn,ii in enumerate(regionfiles):
     #h.set_rotation(0)
     #plt.xlabel(r'$\rm log(N/N_0)$')
     plt.xscale('log') 
-    plt.xlim(1.e14,1.e20) 
+    plt.xlim(1.e14,1.e19) 
     plt.yscale('log') 
 
 pdfname = 'coldens13_pdf.pdf'

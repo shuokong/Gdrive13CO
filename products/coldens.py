@@ -4,9 +4,10 @@ import numpy as np
 
 hdu1 = fits.open('mom0_13co_pix_2_Tmb.fits')[0]
 hdu2 = fits.open('peak_13co_pix_2_Tmb.fits')[0]
-hdu3 = fits.open('peak_regrid13_mask_imfit_12co_pix_2_Tmb.fits')[0]
+hdu3 = fits.open('mask13_peak_regrid13_mask_imfit_12co_pix_2_Tmb.fits')[0]
 hdu4 = fits.open('peak_13co_pix_2_Tmb.fits')[0]
-hdu5 = fits.open('mask_imfit_13co_pix_2_Tmb.fits')[0]
+#hdu5 = fits.open('mask_imfit_13co_pix_2_Tmb.fits')[0]
+hdu5 = fits.open('clip3sigma_mask_imfit_13co_pix_2_Tmb.fits')[0]
 hdu6 = fits.open('13co_pix_2_Tmb_sens.fits')[0]
 
 mom013data = hdu1.data
@@ -59,12 +60,13 @@ tex12cube = np.repeat(tex12data,n1,axis=0)
 print tex12cube.shape
 tau13 = -np.log(1. - (cube13 / 5.3) / (1. / (np.exp(5.3 / tex12cube) - 1) - 0.16))
 print tau13.shape
-tau13_inte = np.nansum(tau13,axis=0,keepdims=True)
+tau13_inte = np.nansum(tau13,axis=0,keepdims=True) * dv
 print tau13.shape
 one_minus_tau13_inte = np.nansum(1.-np.exp(-tau13),axis=0,keepdims=True)
 print one_minus_tau13_inte.shape
-hdu4.data = tau13_inte / one_minus_tau13_inte * coldens13_thin
-if mask == 1:
-    hdu4.data = hdu4.data * sensbool
+#hdu4.data = tau13_inte / one_minus_tau13_inte * coldens13_thin
+hdu4.data = 2.42e14 * (tex12data + 0.88) / (1. - np.exp(-5.3 / tex12data)) * tau13_inte
+#if mask == 1:
+#    hdu4.data = hdu4.data * sensbool
 hdu4.writeto('coldens13_tauinte.fits', output_verify='exception', overwrite=True, checksum=False)
 
