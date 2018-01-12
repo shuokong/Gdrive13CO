@@ -29,7 +29,8 @@ mask = 1
 
 ## tex12.fits
 tex12data = 5.5 / np.log(1. + 5.5 / (peak12data + 0.82))
-hdu4.data = tex12data
+tex12data[tex12data<=2.75] = np.nan
+hdu4.data = tex12data 
 hdu4.writeto('tex12.fits', output_verify='exception', overwrite=True, checksum=False)
 
 ## tau13peak.fits
