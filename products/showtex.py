@@ -63,8 +63,35 @@ if tex == 1:
     beamangle = hdu1.header['BPA']
     ff.show_ellipses(beamx,beamy,bmaj,bmin,angle=beamangle-90,facecolor='black',edgecolor='black')
     ff.add_label(beamx+1.0,beamy+2.0,r'Excitation Temperature $T_{\rm ex}$',size=12,weight='bold')
-    #ff.tick_labels.set_xformat('dd')
-    #ff.tick_labels.set_yformat('dd')
+    ##
+    boxcenterx = 83.95016414
+    boxcentery = -5.684848646
+    boxwidth = 0.2056964
+    boxheight = 0.3077828
+    ff.show_rectangles([boxcenterx],[boxcentery],width=boxwidth,height=boxheight,linestyles='dashed',color='k')
+    boxtopleftx = boxcenterx + boxwidth/2.
+    boxtoplefty = boxcentery + boxheight/2.
+    boxbottomleftx = boxcenterx + boxwidth/2.
+    boxbottomlefty = boxcentery - boxheight/2.
+    zoombottomleftx = 0.175
+    zoombottomlefty = 0.5
+    zoomwidth = 0.15
+    zoomheight = zoomwidth*wid/hei/boxwidth*boxheight
+    zoomtoprightx = (ffax1xc - (zoombottomleftx + zoomwidth)) * ffax1xfactor + xcenter
+    zoomtoprighty = ((zoombottomlefty + zoomheight) - ffax1yc) * ffax1yfactor + ycenter
+    zoombottomrightx = (ffax1xc - (zoombottomleftx + zoomwidth)) * ffax1xfactor + xcenter
+    zoombottomrighty = (zoombottomlefty - ffax1yc) * ffax1yfactor + ycenter
+    f2 = aplpy.FITSFigure(hdu1, figure=fig, subplot=[zoombottomleftx,zoombottomlefty,zoomwidth,zoomheight])
+    f2.set_theme('publication')
+    f2.recenter(boxcenterx,boxcentery,width=boxwidth,height=boxheight)
+    f2.show_colorscale(cmap='afmhot', vmin=30, vmax=300, stretch='log')
+    f2.axis_labels.hide()
+    f2.tick_labels.hide()
+    f2.ticks.hide()
+    f2.frame.set_color('black')
+    ff.show_lines([np.array([[boxtopleftx,zoomtoprightx],[boxtoplefty,zoomtoprighty]])],linestyles='dashed',color='k')
+    ff.show_lines([np.array([[boxbottomleftx,zoombottomrightx],[boxbottomlefty,zoombottomrighty]])],linestyles='dashed',color='k')
+    ###
     pdfname = 'tex12.pdf'
     os.system('rm '+pdfname)
     plt.savefig(pdfname,bbox_inches='tight')

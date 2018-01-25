@@ -18,9 +18,10 @@ ff.recenter(xcenter,ycenter,width=wid,height=hei)
 ff.set_theme('publication')
 #ff.set_system_latex(True)
 maxcolor = np.nanmax(hdu1.data)
-ff.show_colorscale(cmap='cool', vmin=0, vmax=15, stretch='linear')
-ff.show_regions('olay2.reg')
-#ff.show_contour(mask_hdu, levels=1, colors='yellow', linewidths=0.1)
+#ff.show_colorscale(cmap='gnuplot', vmin=2, vmax=15, stretch='linear')
+ff.show_colorscale(cmap='gray_r', vmin=2, vmax=15, stretch='linear')
+ff.show_regions('olay3.reg')
+#ff.show_contour(hdu1, levels=[1], colors='black', linewidths=0.2)
 ff.add_colorbar() 
 ff.colorbar.set_font(size=12)
 ff.colorbar.set_pad(0.5)
@@ -37,7 +38,7 @@ bmaj = hdu1.header['BMAJ']
 bmin = hdu1.header['BMIN']
 beamangle = hdu1.header['BPA']
 #ff.show_ellipses(beamx,beamy,bmaj,bmin,angle=beamangle-90,facecolor='black',edgecolor='black')
-ff.add_label(beamx+1.0,beamy+2.0,'$^{12}$CO/$^{13}$CO',size=12,weight='bold')
+ff.add_label(beamx+1.0,beamy+2.0,r'$W\rm (^{12}CO)$/$W\rm (^{13}CO)$',size=12,weight='bold')
 #ff.tick_labels.set_xformat('dd')
 #ff.tick_labels.set_yformat('dd')
 pdfname = 'ratio_12_13_pix_2_Tmb.pdf'
