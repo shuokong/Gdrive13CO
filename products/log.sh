@@ -2102,3 +2102,117 @@
    172 2018/02/28 18:10 gits
    173 2018/02/28 18:10 git add -f log.sh
    174 2018/02/28 18:10 gits
+   175 2018/02/28 18:11 gitc 'make Tex map compatible with pixel6_convol18 and compare Tdust and Tex'
+   176 2018/02/28 18:11 gpthis
+   177 2018/03/02 14:22 lst
+   178 2018/03/02 14:22 gits
+   179 2018/03/02 14:22 vim mach_number_map.py
+   180 2018/03/02 14:34 python mach_number_map.py
+   181 2018/03/02 14:34 lst
+   182 2018/03/02 14:34 vim mach_number_map.py
+   183 2018/03/02 14:34 ls *.fits | grep stutz
+   184 2018/03/02 14:34 vim mach_number_map.py
+   185 2018/03/02 14:35 ls *.fits | grep lombardi
+   186 2018/03/02 14:35 vim mach_number_map.py
+   187 2018/03/02 14:36 vim mach_number_map.py
+   188 2018/03/02 14:36 python mach_number_map
+   189 2018/03/02 14:36 python mach_number_map.py
+   190 2018/03/02 14:36 lst
+   191 2018/03/02 14:37 ds9 mach_number_map_from_lombardi_tdust.fits
+   192 2018/03/02 14:37 rm mach_number_map_from_*.fits
+   193 2018/03/02 14:38 vim mach_number_map.py
+   194 2018/03/02 14:38 python mach_number_map.py
+   195 2018/03/02 14:39 lst
+   196 2018/03/02 14:39 ds9 soundspeed_map_from_tex12.fits
+   197 2018/03/02 14:42 cp showmom2.py showcs.py
+   198 2018/03/02 14:42 git add -f showcs
+   199 2018/03/02 14:43 git add -f showcs.py
+   200 2018/03/02 14:43 vim showcs.py
+   201 2018/03/02 14:44 vim showcs.py
+   202 2018/03/02 14:45 vim showcs.py
+   203 2018/03/02 14:46 mkdir ../../imagesSFE
+   204 2018/03/02 14:46 vim showcs.py
+   205 2018/03/02 14:46 python showcs.py
+   206 2018/03/02 14:48 ls
+   207 2018/03/02 14:48 ds9 soundspeed_map_from_lombardi_tdust.fits
+   208 2018/03/02 14:49 gits
+   209 2018/03/02 14:49 vim mach_number_map.py
+   210 2018/03/02 14:49 ds9 lombardi_colorT_on_13co_header.fits
+   211 2018/03/02 14:49 ds9 peak_13co_pix_2_Tmb.fits
+   212 2018/03/02 14:50 vim mach_number_map.py
+   213 2018/03/02 14:50 python mach_number_map.py
+   214 2018/03/02 14:50 vim mach_number_map.py
+   215 2018/03/02 14:51 python mach_number_map.py
+   216 2018/03/02 14:51 vim mach_number_map.py
+   217 2018/03/02 14:51 python mach_number_map.py
+   218 2018/03/02 14:51 lst
+   219 2018/03/02 14:52 ds9 soundspeed_map_from_lombardi_tdust.fits
+   220 2018/03/02 14:52 python showcs.py
+   221 2018/03/02 14:53 vim showcs.py
+   222 2018/03/02 14:55 python showcs.py
+   223 2018/03/02 14:56 vim showcs.py
+   224 2018/03/02 14:56 grep usetex *.py
+   225 2018/03/02 14:56 vim showcs.py
+   226 2018/03/02 14:57 python showcs.py
+   227 2018/03/02 14:57 vim showcs.py
+   228 2018/03/02 14:58 python showcs.py
+   229 2018/03/02 14:58 vim showcs.py
+   230 2018/03/02 14:59 python showcs.py
+   231 2018/03/02 15:03 vim showcs.py
+   232 2018/03/02 15:04 python showcs.py
+   233 2018/03/02 15:04 vim showcs.py
+   234 2018/03/02 15:04 python showcs.py
+   235 2018/03/02 15:06 vim showcs.py
+   236 2018/03/02 15:06 python showcs.py
+   237 2018/03/02 15:08 vim showcs.py
+   238 2018/03/02 15:08 python showcs.py
+   239 2018/03/02 15:09 guits
+   240 2018/03/02 15:09 gits
+   241 2018/03/02 15:11 ds9 soundspeed_map_from_lombardi_tdust.fits
+   242 2018/03/02 15:13 vim mach_number_map.py
+   243 2018/03/06 16:36 ls
+   244 2018/03/06 16:36 gits
+   245 2018/03/06 16:41 which pip
+   246 2018/03/06 16:41 pip install gausspy
+   247 2018/03/06 16:48 ds9 mask_imfit_13co_pix_2_Tmb.fits
+   247 2018/03/06 16:48 ds9 mask_imfit_13co_pix_2_Tmb.fits
+   248 2018/03/09 13:34 ls -thld * | grep pixel6
+   249 2018/03/09 13:36 ls -thld * | grep han1
+   250 2018/03/09 13:37 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+   251 2018/03/09 13:37 grep mask_han1_mask *.py
+   252 2018/03/09 13:37 vim usenanmask.py
+   253 2018/03/09 13:40 ls -thld * | grep mask_han1
+   254 2018/03/09 13:42 lst
+   255 2018/03/09 13:50 vim lo
+   256 2018/03/09 13:50 vim log.sh
+   257 2018/03/09 13:55 ls *.fits | grep mom0
+   258 2018/03/09 13:55 ds9 convol_mom0_13co_pix_2_Tmb.fits
+   259 2018/03/09 13:59 ls -thld *.mir | grep pixel6
+   260 2018/03/09 13:59 ls -thld *.mir | grep pixel6 | grep 13
+   261 2018/03/09 13:59 vim chan1_pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir/history
+   262 2018/03/09 15:00 vim log.sh
+   263 2018/03/09 15:03 vim log.sh
+   264 2018/03/09 15:04 gitf master
+   265 2018/03/09 15:04 gitf master | grep tex
+   266 2018/03/09 15:43 ls *.fits
+   267 2018/03/09 15:43 ls *.fits | grep lombardi
+   268 2018/03/09 15:44 grep lombardi *.py
+   269 2018/03/09 15:44 vim repro.py
+   270 2018/03/09 15:53 gits
+   271 2018/03/09 18:04 gits
+   272 2018/03/13 18:00 vim channelmap.py
+   273 2018/03/13 18:01 python channelmap.py
+   274 2018/03/13 18:02 vim channelmap.py
+   275 2018/03/13 18:03 vim channelmap.py
+   276 2018/03/13 18:03 python channelmap.py
+   277 2018/03/13 18:05 vim channelmap.py
+   278 2018/03/13 18:06 ls chan13co*
+   279 2018/03/13 18:06 ls -thl chan13co*
+   280 2018/03/13 18:06 vim channelmap.py
+   281 2018/03/13 18:06 python channelmap.py
+   282 2018/03/13 18:18 vim showmom2.py
+   283 2018/03/13 18:18 python showmom2.py
+   284 2018/03/13 18:27 lst
+   285 2018/03/13 18:28 cp chan13co34.pdf ~/GoogleDrive/imagesCARMAOrion/
+   286 2018/03/13 18:28 cp ../../c18o/products/chanc18o34.pdf ~/GoogleDrive/imagesCARMAOrion/
+   287 2018/03/13 18:36 gits
