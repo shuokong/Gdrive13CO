@@ -7,6 +7,8 @@ hdu1 = fits.open('chan1_mask_imfit_13co_pix_2_Tmb.fits')[0]
 hdu2 = fits.open('han1_mask_imfit_13co_pix_2_Tmb.fits')[0]
 #hdu1.header['BUNIT'] = 'K'
 #print hdu1.header
+del hdu2.header['PV2_1']
+del hdu2.header['PV2_2']
 print hdu1.data.shape
 print hdu2.data.shape
 stokes, velocity, ysize, xsize = hdu2.data.shape

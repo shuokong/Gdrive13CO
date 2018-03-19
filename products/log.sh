@@ -2216,3 +2216,166 @@
    285 2018/03/13 18:28 cp chan13co34.pdf ~/GoogleDrive/imagesCARMAOrion/
    286 2018/03/13 18:28 cp ../../c18o/products/chanc18o34.pdf ~/GoogleDrive/imagesCARMAOrion/
    287 2018/03/13 18:36 gits
+   288 2018/03/13 18:48 gitc 'correct figures'
+   289 2018/03/13 18:48 gits
+   290 2018/03/13 18:48 gpthis
+   290 2018/03/13 18:48 gpthis
+   291 2018/03/14 16:22 exit
+     1 2018/03/14 16:22 pwd
+     2 2018/03/14 16:22 mv ~/GoogleDrive/showC18Ospectra.py .
+     3 2018/03/14 16:22 gits
+     4 2018/03/14 16:22 cp showC18Ospectra.py ../../c18o/products/
+     5 2018/03/14 16:23 mv showC18Ospectra.py show_13CO_spectra_at_Kirk_cores.py
+     6 2018/03/14 16:23 git add -f show_13CO_spectra_at_Kirk_cores.py
+     7 2018/03/14 16:24 gits
+     8 2018/03/14 16:24 vim show_13CO_spectra_at_Kirk_cores.py
+     9 2018/03/14 16:26 ls mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+   215 2018/03/14 16:27 cd ../../13co/products/
+   216 2018/03/14 16:27 python show_13CO_spectra_at_Kirk_cores.py
+   217 2018/03/14 16:28 ls *.txt
+   218 2018/03/14 16:28 cp ../../c18o/products/GAScores.txt .
+   219 2018/03/14 16:28 git add -f GAScores.txt
+   220 2018/03/14 16:45 gits
+   221 2018/03/14 16:46 grep beampixel *.py
+   222 2018/03/14 16:50 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits &
+   223 2018/03/14 16:52 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits &
+   224 2018/03/14 17:19 lst
+   225 2018/03/14 17:19 python show_13CO_spectra_at_Kirk_cores.py
+   226 2018/03/14 17:19 pip install pywcs
+   227 2018/03/14 17:20 python show_13CO_spectra_at_Kirk_cores.py
+   228 2018/03/14 17:22 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+   229 2018/03/14 17:30 ds9 mask_imfit_13co_pix_2_Tmb.fits
+   230 2018/03/14 17:31 grep mask_han1_mask_imfit_13co_pix_2_Tmb *.py
+   231 2018/03/14 17:31 vim repro.py
+   232 2018/03/14 17:31 vim remove4axis.py
+   233 2018/03/14 17:32 grep mask_han1 *.py
+   234 2018/03/14 17:32 vim usenanmask.py
+   235 2018/03/14 17:33 vim usenanmask.py
+   236 2018/03/14 17:34 grep han1_mask casa*.log
+   237 2018/03/14 17:34 grep han1_mask casa*.log | grep exportfits
+   238 2018/03/14 17:35 casa
+   239 2018/03/14 17:37 lst
+   240 2018/03/14 17:37 vim usenanmask.py
+   241 2018/03/14 17:37 ds9 han1_mask_imfit_13co_pix_2_Tmb.fits
+   242 2018/03/14 17:38 vim usenanmask.py
+   243 2018/03/14 17:38 python usenanmask.py
+   244 2018/03/14 17:42 lst
+   245 2018/03/14 17:42 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+   246 2018/03/14 17:43 python show_13CO_spectra_at_Kirk_cores.py
+   247 2018/03/14 17:44 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+   248 2018/03/14 17:45 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits &
+   249 2018/03/14 17:45 ds9 mask_imfit_13co_pix_2_Tmb.fits &
+   250 2018/03/14 18:04 lst
+   251 2018/03/14 18:04 python show_13CO_spectra_at_Kirk_cores.py
+   252 2018/03/14 18:06 python show_13CO_spectra_at_Kirk_cores.py
+   253 2018/03/14 18:09 python show_13CO_spectra_at_Kirk_cores.py
+   254 2018/03/14 18:11 python show_13CO_spectra_at_Kirk_cores.py
+   255 2018/03/14 18:11 python show_13CO_spectra_at_Kirk_cores.py
+   256 2018/03/14 18:12 python show_13CO_spectra_at_Kirk_cores.py
+   257 2018/03/14 18:13 python show_13CO_spectra_at_Kirk_cores.py
+   258 2018/03/14 18:14 python show_13CO_spectra_at_Kirk_cores.py
+   259 2018/03/14 18:17 python show_13CO_spectra_at_Kirk_cores.py
+   260 2018/03/14 18:19 python show_13CO_spectra_at_Kirk_cores.py
+   261 2018/03/14 18:22 python show_13CO_spectra_at_Kirk_cores.py
+   262 2018/03/14 18:23 python show_13CO_spectra_at_Kirk_cores.py
+   263 2018/03/14 18:25 python show_13CO_spectra_at_Kirk_cores.py
+   264 2018/03/14 18:26 python show_13CO_spectra_at_Kirk_cores.py
+   265 2018/03/14 18:26 python show_13CO_spectra_at_Kirk_cores.py
+   266 2018/03/14 18:27 python show_13CO_spectra_at_Kirk_cores.py
+   267 2018/03/14 18:30 python show_13CO_spectra_at_Kirk_cores.py
+   268 2018/03/14 18:32 python show_13CO_spectra_at_Kirk_cores.py
+   269 2018/03/14 18:35 python show_13CO_spectra_at_Kirk_cores.py
+   270 2018/03/14 18:37 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits &
+   271 2018/03/14 18:38 python show_13CO_spectra_at_Kirk_cores.py
+   272 2018/03/14 18:40 python show_13CO_spectra_at_Kirk_cores.py
+   273 2018/03/14 18:51 python show_13CO_spectra_at_Kirk_cores.py
+   274 2018/03/14 18:52 lst
+   275 2018/03/14 18:52 open averspec13number0.pdf
+    10 2018/03/14 16:26 vim show_13CO_spectra_at_Kirk_cores.py
+    11 2018/03/14 18:53 cp show_13CO_spectra_at_Kirk_cores.py ~/GoogleDrive/
+    12 2018/03/14 18:53 rm ~/GoogleDrive/talkShuo.key
+    13 2018/03/14 18:53 ls ~/GoogleDrive/
+   276 2018/03/14 18:53 python show_13CO_spectra_at_Kirk_cores.py
+    14 2018/03/14 18:54 vim show_13CO_spectra_at_Kirk_cores.py
+    15 2018/03/14 18:55 gits
+   277 2018/03/14 18:55 python show_13CO_spectra_at_Kirk_cores.py
+    16 2018/03/14 18:56 vim show_13CO_spectra_at_Kirk_cores.py
+   278 2018/03/14 18:56 python show_13CO_spectra_at_Kirk_cores.py
+   279 2018/03/14 21:03 ls
+   280 2018/03/14 21:03 lst
+   281 2018/03/14 21:04 open averspec13number59.pdf
+   282 2018/03/14 21:04 cp show_13CO_spectra_at_Kirk_cores.py ~/GoogleDrive/
+   283 2018/03/14 21:05 cp show_13CO_spectra_at_Kirk_cores.py ../../c18o/products/
+    17 2018/03/14 21:07 gits
+    18 2018/03/15 13:56 ls pvmap_orion.py
+    19 2018/03/15 13:56 vim pvmap_orion.py
+    20 2018/03/15 13:56 ds9 pv_mask_imfit_13co_pix_2_Tmb.fits
+    21 2018/03/15 13:57 vim pvmap_orion.py
+    22 2018/03/15 14:00 pwd
+    23 2018/03/15 14:02 grep writeto *.py
+    24 2018/03/15 14:21 open pv13.pdf
+    25 2018/03/15 17:00 mv ~/GoogleDrive/showDCOpspectra.py .
+    26 2018/03/15 17:00 vim show_13CO_spectra_at_Kirk_cores.py
+    27 2018/03/15 17:02 lst
+   284 2018/03/15 17:02 rm showDCOpspectra.py
+    28 2018/03/15 17:02 python show_13CO_spectra_at_Kirk_cores.py
+   285 2018/03/15 17:33 lst
+   286 2018/03/15 17:33 python show_13CO_spectra_at_Kirk_cores.py
+   287 2018/03/15 17:42 python show_13CO_spectra_at_Kirk_cores.py
+   288 2018/03/15 17:51 python show_13CO_spectra_at_Kirk_cores.py
+    29 2018/03/15 17:02 vim show_13CO_spectra_at_Kirk_cores.py
+    30 2018/03/15 18:07 lst
+    31 2018/03/15 18:07 vim test.txt
+    32 2018/03/15 18:07 vim test.txt
+   289 2018/03/15 18:01 python
+   290 2018/03/15 18:11 python show_13CO_spectra_at_Kirk_cores.py
+   291 2018/03/15 18:14 lst
+   292 2018/03/15 18:14 rm test.txt
+   293 2018/03/15 18:15 vim GAScores_13CO_peak_velocities.txt
+    33 2018/03/15 18:10 vim show_13CO_spectra_at_Kirk_cores.py
+    34 2018/03/15 18:23 lst
+    35 2018/03/15 18:23 vim test.txt
+    36 2018/03/15 18:23 vim test.txt
+    37 2018/03/15 18:23 vim test.txt
+    38 2018/03/15 18:24 vim test.txt
+    39 2018/03/15 18:24 vim test.txt
+    40 2018/03/15 18:25 vim test.txt
+    41 2018/03/15 18:26 vim test.txt
+    42 2018/03/15 18:26 vim test.txt
+   294 2018/03/15 18:21 python
+   295 2018/03/15 18:27 lst
+   296 2018/03/15 18:27 rm test.txt
+   297 2018/03/15 18:27 python show_13CO_spectra_at_Kirk_cores.py
+   298 2018/03/15 18:32 lst
+   299 2018/03/15 18:32 vim GAScores_13CO_peak_velocities.txt
+   300 2018/03/15 18:33 gits
+   301 2018/03/15 18:33 git add -f GAScores_13CO_peak_velocities.txt
+    43 2018/03/15 18:26 vim show_13CO_spectra_at_Kirk_cores.py
+    44 2018/03/15 18:33 vim show_13CO_spectra_at_Kirk_cores.py
+   302 2018/03/15 18:41 lst
+    45 2018/03/15 18:41 cp show_13CO_spectra_at_Kirk_cores.py ~/GoogleDrive/
+    46 2018/03/16 12:14 lst
+    47 2018/03/16 12:14 vim GAScores_13CO_peak_velocities.txt
+   303 2018/03/16 14:15 open .
+   304 2018/03/16 14:28 rm averspec13number*.pdf
+    48 2018/03/16 14:31 lst
+    49 2018/03/16 14:31 python show_13CO_spectra_at_Kirk_cores.py
+    50 2018/03/16 14:31 lst
+    51 2018/03/16 14:31 rm averspec13number*.pdf
+    52 2018/03/16 14:32 python show_13CO_spectra_at_Kirk_cores.py
+    53 2018/03/16 14:32 lst
+    54 2018/03/16 14:32 open averspec13number5.pdf
+    55 2018/03/16 14:32 python show_13CO_spectra_at_Kirk_cores.py
+    56 2018/03/16 14:33 lst
+    57 2018/03/16 14:33 open averspec13number5.pdf
+   305 2018/03/16 14:28 vim show_13CO_spectra_at_Kirk_cores.py
+   306 2018/03/16 14:37 gits
+    58 2018/03/16 14:33 python show_13CO_spectra_at_Kirk_cores.py
+   307 2018/03/19 15:04 open .
+   308 2018/03/19 15:12 diff show_13CO_spectra_at_Kirk_cores.py ../../c18o/products/show_C18O_spectra_at_Kirk_cores.py
+   309 2018/03/19 15:13 vim show_13CO_spectra_at_Kirk_cores.py
+    59 2018/03/19 15:21 open .
+   310 2018/03/19 15:16 python show_13CO_spectra_at_Kirk_cores.py
+    60 2018/03/19 15:28 lst
+    61 2018/03/19 15:28 vim GAScores_13CO_peak_velocities.txt
+    62 2018/03/19 15:28 gits
