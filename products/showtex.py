@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from astropy.io import fits
 
-tex = 1
+tex = 0
 texstats = 0
 coldens = 1
 coldensstats = 0
@@ -133,7 +133,7 @@ if coldens == 1:
     bmin = hdu1.header['BMIN']
     beamangle = hdu1.header['BPA']
     ff.show_ellipses(beamx,beamy,bmaj,bmin,angle=beamangle-90,facecolor='black',edgecolor='black')
-    ff.add_label(beamx+1.0,beamy+2.0,r'Column Density $N_{13}$',size=12,weight='bold')
+    ff.add_label(beamx+1.0,beamy+2.0,r'$^{13}{\rm CO}$ Column Density $N_{13}$',size=12,weight='bold')
     #ff.tick_labels.set_xformat('dd')
     #ff.tick_labels.set_yformat('dd')
     pdfname = 'coldens13_tauinte.pdf'

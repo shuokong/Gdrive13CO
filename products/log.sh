@@ -2379,3 +2379,145 @@
     60 2018/03/19 15:28 lst
     61 2018/03/19 15:28 vim GAScores_13CO_peak_velocities.txt
     62 2018/03/19 15:28 gits
+   311 2018/03/19 15:29 gitc 'Kirk core beam spectra summary table'
+   312 2018/03/19 15:29 gpthis
+   313 2018/03/19 16:18 gits
+   314 2018/03/19 16:19 cp show_13CO_spectra_at_Kirk_cores.py velocity_distribution_13CO.py
+   315 2018/03/19 16:19 git add -f velocity_distribution_13CO.py
+    63 2018/03/19 16:39 lst
+    64 2018/03/19 16:39 python velocity_distribution_13CO.py
+    65 2018/03/19 16:39 python velocity_distribution_13CO.py
+    66 2018/03/19 16:40 python velocity_distribution_13CO.py
+    67 2018/03/19 16:43 python velocity_distribution_13CO.py
+    68 2018/03/19 16:59 vim showmom0.py
+    69 2018/03/19 16:59 ls ~/GoogleDrive/
+    70 2018/03/19 17:00 lst
+    71 2018/03/19 17:00 python velocity_distribution_13CO.py
+    72 2018/03/19 17:02 python velocity_distribution_13CO.py
+    73 2018/03/19 17:03 python velocity_distribution_13CO.py
+    74 2018/03/19 17:04 python velocity_distribution_13CO.py
+    75 2018/03/19 17:05 python velocity_distribution_13CO.py
+    76 2018/03/19 17:05 gits
+   316 2018/03/19 16:19 vim velocity_distribution_13CO.py
+    77 2018/03/19 17:06 python velocity_distribution_13CO.py
+   317 2018/03/19 18:35 cp ../../12co/products/color_12co_NH_t*.py .
+   318 2018/03/19 18:35 mv color_12co_NH_tdust.py color_13co_NH_tdust.py
+   319 2018/03/19 18:35 mv color_12co_NH_tex.py color_13co_NH_tex.py
+   320 2018/03/19 18:35 git add -f color_13co_NH_t*.py
+   321 2018/03/19 18:36 vim color_13co_NH_tex.py
+   322 2018/03/19 18:36 vim color_13co_NH_tex.py
+   323 2018/03/19 18:44 ls -thld * | grep mom0
+   324 2018/03/19 19:03 moment in=pixel6_convol18_mask_imfit_12co_pix_2_Tmb.mir mom=0 region="kms,images(2.5,15)" out=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   325 2018/03/19 19:03 fitsout pixel6_convol18_mom0_13co_pix_2_Tmb
+   326 2018/03/19 19:06 vim color_13co_NH_tex.py
+   327 2018/03/19 19:06 python color_13co_NH_tex.py
+   328 2018/03/19 19:08 mv stutz_NH_on_13co_header.fits stutz_on_13co_header.fits
+   329 2018/03/19 19:08 python color_13co_NH_tex.py
+   330 2018/03/19 19:08 cp ../../12co/products/boxes.txt .
+   331 2018/03/19 19:08 prthd in=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   332 2018/03/19 19:09 vim boxes.txt
+   333 2018/03/19 19:09 python color_13co_NH_tex.py
+   334 2018/03/19 20:39 vim color_13co_NH_tex.py
+   335 2018/03/19 20:48 vim color_13co_NH_tex.py
+   336 2018/03/19 20:49 vim color_13co_NH_tex.py
+   337 2018/03/19 20:49 grep stutz_on_13co *.py
+   338 2018/03/19 20:50 grep stutz_NH_on_13co *.py
+   339 2018/03/19 20:50 vim repro.py
+   340 2018/03/19 20:59 vim log.sh
+   341 2018/03/19 21:00 moment in=pixel6_convol18_mask_imfit_13co_pix_2_Tmb.mir mom=0 region="kms,images(2.5,15)" out=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   342 2018/03/19 21:00 rm -r pixel6_convol18_mom0_13co_pix_2_Tmb.*
+   343 2018/03/19 21:00 moment in=pixel6_convol18_mask_imfit_13co_pix_2_Tmb.mir mom=0 region="kms,images(2.5,15)" out=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   344 2018/03/19 21:00 moment in=pixel6_convol18_mask_han1_mask_imfit_13co_pix_2_Tmb.mir mom=0 region="kms,images(2.5,15)" out=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   345 2018/03/19 21:01 ls -d *.mir | grep han1
+   346 2018/03/19 21:01 ls -d *.fits | grep han1
+   347 2018/03/19 21:02 fitsin pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb
+   348 2018/03/19 21:03 moment in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir mom=0 region="kms,images(2.5,15)" out=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   349 2018/03/19 21:04 ds9 pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.fits
+   350 2018/03/19 21:07 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   351 2018/03/19 21:12 ls -thld * | grep mom0
+   352 2018/03/19 21:21 ls -thld * | grep pixel6
+   353 2018/03/19 21:22 grep chan1_pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb log.sh
+   354 2018/03/19 21:34 rm -r pixel6_convol18_mask_imfit_12co_pix_2_Tmb.mir
+   355 2018/03/19 21:34 rm regrid13_pixel6_convol18_mask_imfit_12co_pix_2_Tmb.mir/
+   356 2018/03/19 21:34 rm -r regrid13_pixel6_convol18_mask_imfit_12co_pix_2_Tmb.mir/
+   357 2018/03/19 21:43 grep chan1_pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb log.sh
+   358 2018/03/19 21:45 grep pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb log.sh
+   359 2018/03/19 21:46 vim log.sh
+   360 2018/03/19 21:46 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb
+   361 2018/03/19 21:46 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   362 2018/03/19 21:48 puthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir/units value="m/s"
+   363 2018/03/19 21:48 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   364 2018/03/19 21:50 delhd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir/units
+   365 2018/03/19 21:50 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   366 2018/03/19 21:50 puthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir/cunit3 value="m/s"
+   367 2018/03/19 21:50 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   368 2018/03/19 21:50 puthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir/cunits3 value="m/s"
+   369 2018/03/19 21:50 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   370 2018/03/19 21:51 delhd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir/cunits3
+   371 2018/03/19 21:51 delhd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir/cunit3
+   372 2018/03/19 21:51 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   373 2018/03/19 21:52 ds9 pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.fits
+   373 2018/03/19 21:52 ds9 pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.fits
+   374 2018/03/19 21:54 ls -thld * | grep pixel6
+   375 2018/03/19 21:57 grep pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb log.sh
+   376 2018/03/19 21:59 ls -thld * | grep han1
+   377 2018/03/19 22:04 grep 'han1_mask_imfit_13co_pix_2_Tmb.fits' *.py
+   378 2018/03/19 22:04 grep 'han1_mask_imfit_13co_pix_2_Tmb.fits' *.py | grep -v pixel6
+   379 2018/03/19 22:05 ds9 han1_mask_imfit_13co_pix_2_Tmb.fits
+   380 2018/03/19 22:06 ds9 han1_mask_imfit_13co_pix_2_Tmb.fits
+   380 2018/03/19 22:06 ds9 han1_mask_imfit_13co_pix_2_Tmb.fits
+   381 2018/03/19 22:07 prthd in=han1_mask_imfit_13co_pix_2_Tmb.mir
+   382 2018/03/19 22:07 prthd in=mas_han1_mask_imfit_13co_pix_2_Tmb.mir
+   383 2018/03/19 22:07 prthd in=mask_han1_mask_imfit_13co_pix_2_Tmb.mir
+   384 2018/03/19 22:07 ls -thld *.mir | grep han1
+   385 2018/03/19 22:08 prthd in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir
+   386 2018/03/19 22:09 moment in=pixel6_convol18_han1_mask_imfit_13co_pix_2_Tmb.mir mom=0 region="kms,images(2500,15000)" out=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   387 2018/03/19 22:10 lst
+   388 2018/03/19 22:10 rm -r pixel6_convol18_mom0_13co_pix_2_Tmb.mir/
+   389 2018/03/19 22:10 ls -thld * | grep mom0
+   390 2018/03/19 22:11 convol map=mom0_13co_pix_2_Tmb.mir fwhm=18 pa=0 options=final out=convol18_mom0_13co_pix_2_Tmb.mir
+   391 2018/03/19 22:12 imbin in=convol18_mom0_13co_pix_2_Tmb.mir bin="3,3,3,3,1,1" out=pixel6_convol18_mom0_13co_pix_2_Tmb.mir
+   392 2018/03/19 22:12 fitsout pixel6_convol18_mom0_13co_pix_2_Tmb
+   393 2018/03/19 22:13 python color_13co_NH_tex.py
+   394 2018/03/19 22:13 vim boxes.txt
+   395 2018/03/19 22:13 vim boxes.txt
+   396 2018/03/19 22:13 python color_13co_NH_tex.py
+   397 2018/03/19 22:18 vim color_13co_NH_tex.py
+   398 2018/03/19 22:18 python color_13co_NH_tex.py
+   399 2018/03/20 16:39 lst
+   400 2018/03/20 16:39 open color_13co_NH_tex.pdf
+   401 2018/03/20 17:27 open color_13co_NH_tex.pdf
+   402 2018/03/20 17:29 vim repro.py
+   403 2018/03/20 17:29 vim color_13co_NH_tdust.py
+   404 2018/03/20 17:33 gits
+   405 2018/03/20 17:33 python color_13co_NH_tdust.py && python color_13co_NH_tex.py
+   406 2018/03/20 17:46 gits
+   407 2018/03/21 16:15 vim color_13co_NH_tdust.py
+   408 2018/03/21 16:15 python color_13co_NH_tdust.py
+   409 2018/03/21 16:29 vim color_13co_NH_tex.py
+   410 2018/03/21 16:29 python color_13co_NH_tex.py
+   411 2018/03/21 16:52 vim coldens.py
+   412 2018/03/21 16:52 ls *.py
+   413 2018/03/21 17:31 vim showtex.py
+   414 2018/03/21 17:32 python showtex.py
+   415 2018/03/21 17:33 vim showtex.py
+   416 2018/03/21 17:33 python showtex.py
+   417 2018/03/21 17:34 open ds9.ps
+   418 2018/03/21 17:35 mv ds9.ps 13mom0range.ps
+   419 2018/03/21 17:35 lst
+   420 2018/03/21 17:36 open 13mom0range.ps
+   421 2018/03/21 21:59 mv multicolor_12co_NH_tdust.py multicolor_13co_NH_tdust.py
+   422 2018/03/21 21:59 git add -f multicolor_13co_NH_tdust.py
+   423 2018/03/21 21:59 vim multicolor_13co_NH_tdust.py
+   424 2018/03/21 22:00 python multicolor_13co_NH_tdust.py
+   425 2018/03/21 22:15 vim multicolor_13co_NH_tdust.p
+   426 2018/03/21 22:15 vim multicolor_13co_NH_tdust.py
+   427 2018/03/21 22:15 python multicolor_13co_NH_tdust.py
+   428 2018/03/21 22:27 cp ../../12co/products/subregions_jrf.reg .
+   429 2018/03/21 22:27 ds9 stutz_on_13co_header.fits &
+   430 2018/03/21 22:28 vim multicolor_13co_NH_tdust.py
+   431 2018/03/21 22:29 vim multicolor_13co_NH_tdust.py
+   432 2018/03/21 22:31 vim multicolor_13co_NH_tdust.py
+   433 2018/03/21 22:34 python multicolor_13co_NH_tdust.py
+   434 2018/03/21 22:47 lst
+   435 2018/03/21 22:47 open multicolor_13co_NH_tdust.pdf
