@@ -2521,3 +2521,30 @@
    433 2018/03/21 22:34 python multicolor_13co_NH_tdust.py
    434 2018/03/21 22:47 lst
    435 2018/03/21 22:47 open multicolor_13co_NH_tdust.pdf
+   436 2018/03/22 15:48 gitc 'regional gas vs dust plots'
+   437 2018/03/22 15:48 gpthis
+   438 2018/03/22 15:48 lst
+   439 2018/03/22 15:48 gname
+   440 2018/03/26 17:42 gits
+   441 2018/03/26 17:42 vim showmom0.py
+   442 2018/03/26 17:42 vim olay1.reg
+   443 2018/03/26 17:43 python showmom0.py
+   444 2018/03/26 17:45 vim showmom1.py
+   445 2018/03/26 17:46 vim olay2.reg
+   446 2018/03/26 17:46 python showmom1.py
+   447 2018/03/26 17:47 gits
+   448 2018/03/26 17:47 git checkout -f olay2.reg
+   449 2018/03/26 17:54 vim olay2.reg
+   450 2018/03/26 18:02 vim pvmap_orion.py
+   451 2018/03/26 18:03 vim pvmap_orion.py
+   452 2018/03/26 18:03 python pvmap_orion.py
+   453 2018/03/26 18:03 lst
+   454 2018/03/26 18:03 open pv13.pdf
+   455 2018/03/26 18:04 python pvmap_orion.py
+   456 2018/03/26 18:05 cp pv13.pdf ../../imagesCARMAOrion/
+   457 2018/03/27 16:58 ds9 -restore rgb.bck &
+   458 2018/03/27 17:00 mv rgb_with_dust.png rgb13_with_dust.png
+   459 2018/03/27 17:00 cp rgb13_with_dust.png ~/GoogleDrive/imagesSFE/
+   460 2018/03/27 17:36 gits
+   461 2018/03/27 17:36 git diff --follow pvmap_orion.py
+   462 2018/03/27 17:37 gits
