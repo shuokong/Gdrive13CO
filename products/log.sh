@@ -2548,3 +2548,75 @@
    460 2018/03/27 17:36 gits
    461 2018/03/27 17:36 git diff --follow pvmap_orion.py
    462 2018/03/27 17:37 gits
+   463 2018/03/27 17:37 gitc 'thinner color bar pv diagram'
+   464 2018/03/27 17:37 gpthis
+   465 2018/03/27 18:52 ls *.txt
+   466 2018/03/27 18:55 cp ../../12co/products/Getsources_cores.txt .
+   467 2018/03/27 18:55 cp ../../12co/products/show_12CO_spectra_at_Lane_cores.py .
+   468 2018/03/27 18:55 mv show_12CO_spectra_at_Lane_cores.py show_13CO_spectra_at_Lane_cores.py
+   469 2018/03/27 18:55 vim show_13CO_spectra_at_Lane_cores.py
+   470 2018/03/27 18:56 mkdir Lane_cores_spectra
+   471 2018/03/27 18:57 gits
+   472 2018/03/27 18:57 git add -f show_13CO_spectra_at_Lane_cores.py
+   473 2018/03/27 18:57 git add -f Getsources_cores.txt
+   474 2018/03/27 18:57 python show_13CO_spectra_at_Lane_cores.py
+   475 2018/03/27 18:59 git rm -f Getsources_cores.txt
+   476 2018/03/27 18:59 vim show_13CO_spectra_at_Lane_cores.py
+   477 2018/03/27 19:00 python show_13CO_spectra_at_Lane_cores.py
+   478 2018/03/28 15:44 cp pv_mask_imfit_13co_pix_2_Tmb.fits ../../imagesCARMAOrion/
+   479 2018/03/28 18:32 gits
+   480 2018/03/28 18:32 vim show_13CO_spectra_at_Lane_cores.py
+   481 2018/03/28 18:34 python show_13CO_spectra_at_Lane_cores.py
+   482 2018/03/29 10:20 vim show_13CO_spectra_at_Lane_cores.py
+   483 2018/03/29 10:23 diff ../../12co/products/show_12CO_spectra_at_Lane_cores.py show_13CO_spectra_at_Lane_cores.py
+   484 2018/03/29 10:24 vim show_13CO_spectra_at_Lane_cores.py
+   485 2018/03/29 10:24 diff ../../12co/products/show_12CO_spectra_at_Lane_cores.py show_13CO_spectra_at_Lane_cores.py
+   486 2018/03/29 10:24 python show_13CO_spectra_at_Lane_cores.py
+   487 2018/03/29 16:19 gits
+   488 2018/03/29 16:20 imsub in=mask_imfit_13co_pix_2_Tmb.mir out=stutz_mask_imfit_13co_pix_2_Tmb.mir region="abspix,boxes()()"
+   489 2018/03/29 16:20 ds9 mask_imfit_13co_pix_2_Tmb.fits &
+   490 2018/03/29 16:22 ds9 mask_imfit_13co_pix_2_Tmb.fits &
+   491 2018/03/29 16:25 imsub in=mask_imfit_13co_pix_2_Tmb.mir out=stutz_mask_imfit_13co_pix_2_Tmb.mir region="abspix,boxes(1528,2722,1802,3407)()"
+   492 2018/03/29 16:25 open pv13.pdf
+   493 2018/03/29 16:26 imsub in=mask_imfit_13co_pix_2_Tmb.mir out=stutz_mask_imfit_13co_pix_2_Tmb.mir region="abspix,boxes(1528,2722,1802,3407)(35,126)"
+   494 2018/03/29 16:27 fitsin stutz_mask_imfit_13co_pix_2_Tmb
+   495 2018/03/29 16:27 lst
+   496 2018/03/29 16:28 fitsout stutz_mask_imfit_13co_pix_2_Tmb
+   497 2018/03/29 16:28 lst
+   498 2018/03/29 17:54 ls -thd * | grep convol18 | grep pixel6
+   499 2018/03/29 17:55 gits
+   500 2018/03/29 17:56 gits | grep tex_pixel6
+   501 2018/03/29 17:56 gitf master | grep tex_pixel6
+   502 2018/03/29 17:56 ls -thd * | grep convol18 | grep pixel6 | xargs -I % rm -r %
+   503 2018/03/29 17:56 gits
+   504 2018/03/29 17:56 git checkout -f tex_pixel6_convol18.py
+   505 2018/03/29 17:56 gits
+   506 2018/03/30 14:36 vim show_13CO_spectra_at_Lane_cores.py
+   507 2018/03/30 14:39 vim show_13CO_spectra_at_Kirk_cores.py
+   508 2018/03/30 15:09 ls -thld * | grep convol18
+   509 2018/03/30 15:10 vim convol18_mom0_13co_pix_2_Tmb.mir/history
+   510 2018/03/30 15:10 vim convol18_han1_mask_imfit_13co_pix_2_Tmb.im/history
+   511 2018/03/30 15:10 rm -rf convol18_han1_mask_imfit_13co_pix_2_Tmb.im/
+   512 2018/03/30 15:11 cp -r /Users/shuokong/GoogleDrive/OrionAdust/herschelAmelia/carmanro_OrionA_all_spire250_nh_mask_corr_apex.mir .
+   513 2018/03/30 15:12 regrid in=convol18_mom0_13co_pix_2_Tmb.mir out=regrid_Stutz_convol18_mom0_13co_pix_2_Tmb.mir axes="1,2" tin=carmanro_OrionA_all_spire250_nh_mask_corr_apex.mir
+   514 2018/03/30 15:12 lst
+   515 2018/03/30 15:12 fitsout regrid_Stutz_convol18_mom0_13co_pix_2_Tmb
+   516 2018/03/30 15:12 lst
+   517 2018/03/30 15:12 ds9 regrid_Stutz_convol18_mom0_13co_pix_2_Tmb.fits
+   518 2018/03/30 16:46 lst
+   519 2018/03/30 16:46 fitsout carmanro_OrionA_all_spire250_nh_mask_corr_apex
+   520 2018/03/30 16:47 vim color_13co_NH_tdust.py
+   521 2018/03/30 16:48 cp ../../12co/products/lombardi_colorT_on_Stutz_header.fits .
+   522 2018/03/30 16:48 python color_13co_NH_tdust.py
+   523 2018/03/30 16:48 vim boxes.txt
+   524 2018/03/30 16:49 cp ../../12co/products/boxes.txt .
+   525 2018/03/30 16:49 vim boxes.txt
+   526 2018/03/30 16:49 python color_13co_NH_tdust.py
+   527 2018/03/30 16:52 vim color_13co_NH_tex.py
+   528 2018/03/30 16:53 lst
+   529 2018/03/30 16:53 cp ../../12co/products/regrid_Stutz_convol18_tex12.fits .
+   530 2018/03/30 16:53 rm regrid_Stutz_convol18_tex12.fits
+   531 2018/03/30 16:53 vim color_13co_NH_tex.py
+   532 2018/03/30 16:54 vim color_13co_NH_tex.py
+   533 2018/03/30 16:55 python color_13co_NH_tex.py
+   534 2018/03/30 17:00 lst
