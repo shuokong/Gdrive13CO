@@ -2620,3 +2620,121 @@
    532 2018/03/30 16:54 vim color_13co_NH_tex.py
    533 2018/03/30 16:55 python color_13co_NH_tex.py
    534 2018/03/30 17:00 lst
+   535 2018/03/30 18:09 gitc 'regrid CO to stutz'
+   536 2018/03/30 18:09 gpthis
+   537 2018/04/01 16:27 vim color_13co_NH_tdust.py
+   538 2018/04/01 16:28 python color_13co_NH_tdust.py && python color_13co_NH_tex.py
+   539 2018/04/01 16:29 lst
+   540 2018/04/02 17:33 lst
+   541 2018/04/02 17:33 python color_13co_NH_tdust.py
+   542 2018/04/02 17:57 vim color_13co_NH_tdust.py
+   543 2018/04/02 17:59 python color_13co_NH_tdust.py
+   544 2018/04/02 18:01 vim color_13co_NH_tdust.py
+   545 2018/04/02 18:01 python color_13co_NH_tdust.py
+   546 2018/04/02 18:01 vim color_13co_NH_tdust.py
+   547 2018/04/02 18:02 python color_13co_NH_tdust.py
+   548 2018/04/02 18:07 vim color_13co_NH_tdust.py
+   549 2018/04/02 18:09 python color_13co_NH_tex.py
+   550 2018/04/02 18:09 vim color_13co_NH_tex.py
+   551 2018/04/02 18:10 python color_13co_NH_tex.py
+   552 2018/04/02 18:11 lst
+   553 2018/04/02 18:17 vim color_13co_NH_tdust.py
+   554 2018/04/02 18:22 vim color_13co_NH_tex.py
+   555 2018/04/02 18:22 gits
+   556 2018/04/02 18:30 ls -thld *.mir
+   557 2018/04/02 18:30 vim regrid13_mask_imfit_12co_pix_2_Tmb.mir/history
+   558 2018/04/02 18:30 rm -r regrid13_mask_imfit_12co_pix_2_Tmb.mir
+   559 2018/04/02 18:30 rm -r peak_regrid13_mask_imfit_12co_pix_2_Tmb.mir
+   560 2018/04/02 18:45 vim convol_mom0_13co_pix_2_Tmb.mir/history
+   561 2018/04/02 18:45 vim log.sh
+   562 2018/04/02 18:48 convol in=mask_imfit_13co_pix_2_Tmb.mir fwhm="10,8" pa="-13" out=convol_12co_mask_imfit_13co_pix_2_Tmb.mir
+   563 2018/04/02 18:48 vim log.sh
+   564 2018/04/02 18:48 convol map=mask_imfit_13co_pix_2_Tmb.mir fwhm="10,8" pa="-13" out=convol_12co_mask_imfit_13co_pix_2_Tmb.mir
+   565 2018/04/02 18:55 cp ../../c18o/products/smooth.py .
+   566 2018/04/02 18:55 lst
+   567 2018/04/02 18:56 fitsout convol_12co_mask_imfit_13co_pix_2_Tmb
+   568 2018/04/02 23:12 lst
+   569 2018/04/02 23:12 vim smooth.py
+   570 2018/04/02 23:13 python smooth.py
+   571 2018/04/03 9:47 lst
+   572 2018/04/03 9:47 fitsin specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.fits
+   573 2018/04/03 9:47 fitsin specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb
+   574 2018/04/03 9:51 regrid in=specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.mir tin=../../12co/products/mask_imfit_12co_pix_2_Tmb.mir out=regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.mir
+   575 2018/04/03 9:51 regrid in=specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.mir tin=../../12co/products/mask_imfit_12co_pix_2_Tmb.mir out=regrid_12co_specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.mir
+   576 2018/04/03 9:52 regrid in=specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.mir tin=../../12co/products/mask_imfit_12co_pix_2_Tmb.mir out=regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.mir
+   577 2018/04/03 10:58 fitsout regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb
+   578 2018/04/03 11:01 ds9 regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.fits
+   579 2018/04/03 11:01 cp regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.fits ../../Alyssa/
+   580 2018/04/03 15:08 vim color_13co_NH_tex.py
+   581 2018/04/03 15:10 python color_13co_NH_tex.py
+   582 2018/04/03 15:11 cp color_13co_NH_tex.py zoomin_color_13co_NH_tex.py
+   583 2018/04/03 15:11 git add -f zoomin_color_13co_NH_tex.py
+   584 2018/04/03 15:11 vim zoomin_color_13co_NH_tex.py
+   585 2018/04/03 15:12 python zoomin_color_13co_NH_tex.py
+   586 2018/04/03 15:14 vim color_13co_NH_tex.py
+   587 2018/04/03 15:18 gits
+   588 2018/04/04 10:34 open ../channels_13co_pix_2/
+   589 2018/04/05 16:58 vim remove4axis.py
+   590 2018/04/05 16:59 lst
+   591 2018/04/05 16:59 vim remove4axis.py
+   592 2018/04/05 17:00 gits
+   593 2018/04/05 17:00 python remove4axis.py
+   594 2018/04/05 17:00 vim remove4axis.py
+   595 2018/04/05 17:00 ds9 regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.fits
+   596 2018/04/05 17:02 vim regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.mir/history
+   597 2018/04/05 17:08 vim smooth.py
+   598 2018/04/26 19:13 lst
+   599 2018/04/26 19:13 open .
+   600 2018/04/26 19:13 open color_13co_NH_tex.pdf
+   601 2018/04/26 19:16 vim color_13co_NH_tex.py
+   602 2018/04/26 19:16 python color_13co_NH_tex.py
+   603 2018/04/26 19:33 vim color_13co_NH_tex.py
+   604 2018/04/26 19:33 python color_13co_NH_tex.py
+   605 2018/04/26 19:34 vim zoomin_color_13co_NH_tex.p
+   606 2018/04/26 19:34 vim zoomin_color_13co_NH_tex.py
+   607 2018/04/26 19:35 python zoomin_color_13co_NH_tex.p
+   608 2018/04/26 19:35 python zoomin_color_13co_NH_tex.py
+   609 2018/04/28 20:54 grep hist *.py
+   610 2018/04/28 20:54 vim coldens_hist.py
+   611 2018/04/28 21:45 exit
+     1 2018/04/30 18:58 cd GoogleDrive/13co/products/
+     2 2018/04/30 18:59 gits
+     3 2018/04/30 18:59 cp ../../12co/products/showXCO.py .
+     4 2018/04/30 18:59 gits
+     5 2018/04/30 19:00 git add -f showXCO.py
+     6 2018/04/30 19:00 vim showXCO.py
+     7 2018/04/30 19:00 cp ../../12co/products/xcotex.py .
+     8 2018/04/30 19:00 git add -f xcotex.py
+     9 2018/04/30 19:00 vim xcotex.py
+    10 2018/04/30 19:01 python xcotex.py
+    11 2018/04/30 19:02 vim xcotex.py
+    12 2018/04/30 19:02 cp ../../12co/products/statistics_calculation.py .
+    13 2018/04/30 19:02 vim xcotex.py
+    14 2018/04/30 19:02 python xcotex.py
+    15 2018/04/30 19:03 ls *.fits | grep mom0
+    16 2018/04/30 19:03 vim xcotex.py
+    17 2018/04/30 19:03 ls *.fits | grep mom0
+    18 2018/04/30 19:03 python xcotex.py
+    19 2018/04/30 19:04 lst
+    20 2018/04/30 19:04 ds9 XCO.fits
+    20 2018/04/30 19:04 ds9 XCO.fits
+    20 2018/04/30 19:04 ds9 XCO.fits
+    20 2018/04/30 19:04 ds9 XCO.fits
+    21 2018/04/30 19:06 vim xcotex.py
+    22 2018/04/30 19:06 ds9 regrid_Stutz_convol18_mom0_13co_pix_2_Tmb.fits
+    23 2018/04/30 19:07 ds9 XCO.fits
+    24 2018/04/30 19:07 vim xcotex.py
+    25 2018/04/30 19:08 vim xcotex.py
+    26 2018/04/30 19:08 python xcotex.py
+    27 2018/04/30 19:08 vim xcotex.py
+    28 2018/04/30 19:11 python xcotex.py
+    29 2018/04/30 19:19 vim xcotex.py
+    30 2018/04/30 19:20 python xcotex.py
+    31 2018/04/30 19:21 vim showXCO.py
+    32 2018/04/30 19:22 vim showXCO.py
+    33 2018/04/30 19:22 python showXCO.py
+    34 2018/04/30 19:23 cp ../../12co/products/olay4.reg
+    35 2018/04/30 19:23 cp ../../12co/products/olay4.reg .
+    36 2018/04/30 19:23 python showXCO.py
+    37 2018/05/01 16:15 gist
+    38 2018/05/01 16:15 gits
