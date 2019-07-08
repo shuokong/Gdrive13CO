@@ -2738,3 +2738,137 @@
     36 2018/04/30 19:23 python showXCO.py
     37 2018/05/01 16:15 gist
     38 2018/05/01 16:15 gits
+    39 2018/05/01 16:15 gitc 'make 13CO X-factor'
+    40 2018/05/01 16:15 gpthis
+    41 2018/05/10 17:29 vim show_13CO_spectra_at_Lane_cores.py
+    44 2018/05/10 17:36 cd -
+    45 2018/05/10 17:41 vim show_13CO_spectra_at_Lane_cores.py
+    46 2018/05/10 17:48 ls *.fits | grep mask
+    47 2018/05/10 17:49 ds9 han1_mask_imfit_13co_pix_2_Tmb.fits
+    48 2018/05/10 17:53 vim show_13CO_spectra_at_Lane_cores.py
+    49 2018/05/10 17:59 vim remove34axes_pixel6.py
+    50 2018/05/11 16:42 vim log.sh
+    51 2018/05/11 16:42 rm -r convol_12co_mask_imfit_13co_pix_2_Tmb.*
+    52 2018/05/11 16:43 convol map=mask_imfit_13co_pix_2_Tmb.mir fwhm="10,8" pa="-13" options=final out=convol_12co_mask_imfit_13co_pix_2_Tmb.mir
+    53 2018/05/11 16:43 smir
+    54 2018/05/11 16:43 convol map=mask_imfit_13co_pix_2_Tmb.mir fwhm="10,8" pa="-13" options=final out=convol_12co_mask_imfit_13co_pix_2_Tmb.mir
+    55 2018/05/11 17:00 lst
+    56 2018/05/11 17:00 fitsout convol_12co_mask_imfit_13co_pix_2_Tmb
+    57 2018/05/11 17:10 ls *.py | grep smooth
+    58 2018/05/11 17:10 vim smooth.py
+    59 2018/05/11 17:10 python smooth.py
+    60 2018/05/12 17:23 lst
+    61 2018/05/12 17:23 ls -thld specsmooth*
+    62 2018/05/12 17:23 vim specsmooth.last
+    63 2018/05/12 17:25 rm -r specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.mir/
+    64 2018/05/12 17:25 fitsin specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb
+    65 2018/05/12 17:29 rm -r regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.*
+    66 2018/05/12 17:29 vim log.sh
+    67 2018/05/12 17:32 regrid in=specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.mir tin=../../12co/products/mask_imfit_12co_pix_2_Tmb.mir out=regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.mir
+    68 2018/05/12 17:46 fitsout regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb
+    69 2018/05/12 17:49 cp regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.fits ~/GoogleDrive/Alyssa/regrid_12co_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.fits
+    70 2018/05/17 17:28 gits
+    71 2018/05/17 17:28 vim show_13CO_spectra_at_Kirk_cores.py
+    72 2018/05/17 17:34 ls *.pdf
+    73 2018/05/17 17:36 rm averspec13number*.pdf
+    74 2018/05/17 17:36 ls *.pdf
+    75 2018/06/01 17:07 ls *.fits
+    76 2018/06/01 17:07 ls -thld *.fits | grep G
+    77 2018/06/01 17:08 ls *.py
+    78 2018/06/01 17:08 vim repro.py
+    79 2018/06/01 17:08 vim smooth.py
+    80 2018/06/01 17:09 vim log.sh
+    81 2018/06/01 17:10 ds9 carmanro_OrionA_all_spire250_nh_mask_corr_apex.fits
+    82 2018/06/01 17:10 prthd in=carmanro_OrionA_all_spire250_nh_mask_corr_apex.mir
+    83 2018/06/01 17:10 ds9 carmanro_OrionA_all_spire250_nh_mask_corr_apex.fits
+    84 2018/06/01 17:11 vim log.sh
+    85 2018/06/01 17:13 regrid in=convol_12co_mask_imfit_13co_pix_2_Tmb.mir tin=../../12co/products/mask_imfit_12co_pix_2_Tmb.mir out=regrid_12co_convol_12co_mask_imfit_13co_pix_2_Tmb.mir axes="1,2"
+    86 2018/06/01 17:24 lst
+    87 2018/06/01 17:25 fitsout regrid_12co_convol_12co_mask_imfit_13co_pix_2_Tmb
+    88 2018/06/01 17:32 lst
+    89 2018/06/01 18:08 ls ../../Alyssa/
+    90 2018/06/01 18:08 vim remove4axis.py
+    91 2018/06/01 18:09 python remove4axis.py
+    92 2018/06/01 18:20 lst
+    93 2018/06/01 18:20 vim remove4axis.py
+    94 2018/06/08 17:02 convol map=mask_imfit_13co_pix_2_Tmb.mir fwhm=32 options=final out=convol32_mask_imfit_13co_pix_2_Tmb.mir
+    95 2018/06/08 17:18 fitsout convol32_mask_imfit_13co_pix_2_Tmb
+    96 2018/06/08 17:25 lst
+    97 2018/06/08 17:25 rm -r convol32_mask_imfit_13co_pix_2_Tmb.mir
+    98 2018/06/12 17:16 ls *.fits
+    99 2018/06/12 17:16 ls *.fits | grep mo1m
+   100 2018/06/12 17:16 ls *.fits | grep mom1
+   101 2018/06/13 11:50 grep genfromtxt *.py
+   102 2018/06/20 9:46 ds9 convol32_mask_imfit_13co_pix_2_Tmb.fits &
+   103 2018/06/22 15:44 lst
+   104 2018/06/22 15:45 ls *.fits
+   105 2018/06/22 15:45 ls -thld *.fits | grep G
+   106 2018/06/22 15:50 ds9 specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.fits
+   107 2018/06/22 15:51 vim smooth.py
+   108 2018/06/22 15:56 ds9 han1_mask_imfit_13co_pix_2_Tmb.fits
+   109 2018/06/22 15:56 grep han1 *.log
+   110 2018/06/22 15:57 ds9 han1_mask_imfit_13co_pix_2_Tmb.fits
+   111 2018/06/22 15:58 rm -r han1_mask_imfit_13co_pix_2_Tmb.im
+   112 2018/06/22 15:59 ls *.fits | grep han1
+   113 2018/06/22 16:00 ds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+   114 2018/06/22 16:00 ds9 nostokes_han1_mask_imfit_13co_pix_2_Tmb.fits
+   115 2018/06/22 16:01 rm han1_mask_imfit_13co_pix_2_Tmb.fits
+   116 2018/06/22 16:01 rm nostokes_han1_mask_imfit_13co_pix_2_Tmb.fits
+   117 2018/06/22 16:01 ls *.fits | grep han1
+   118 2018/06/27 10:12 vim log.sh
+   119 2018/06/27 10:13 convol map=specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.mir fwhm=32 options=final out=convol32_specsmooth_0p25_mask_imfit_13co_pix_2_Tmb.mir
+   120 2018/06/27 10:14 convol map=specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.mir fwhm=32 options=final out=convol32_specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.mir
+   121 2018/06/27 10:23 lst
+   122 2018/06/27 10:23 fitsout convol32_specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb
+   123 2018/06/27 16:56 open mom1_13co_pix_2_Tmb.pdf
+   124 2018/06/27 16:56 open mom2_13co_pix_2_Tmb.pdf
+    63 2018/08/15 14:59 cd ../../13co/products/
+    64 2018/08/15 14:59 vim pvmap_orion.py
+    65 2018/08/15 15:22 ls *.reg
+    72 2018/08/15 18:16 cd -
+    73 2018/08/15 18:16 pwd
+    74 2018/08/15 20:52 ls *.py | grep pv
+    75 2018/08/15 20:52 vim pvmap_orion.py
+   103 2018/08/17 17:21 cd ../../13co/products/
+   104 2018/08/17 17:21 vim showmom0.py
+   107 2018/08/17 17:22 cd -
+   108 2018/08/17 17:22 vim showmom0.py
+   109 2018/08/17 17:22 python showmom0.py
+   110 2018/08/17 17:22 lst
+   111 2018/08/17 17:23 ds9 13mom0mask.fits
+   131 2018/08/20 15:24 cd ../../13co/products/
+   132 2018/08/20 15:24 vim showmom0.py
+   133 2018/08/20 15:24 python showmom0.py
+   134 2018/08/20 15:24 lst
+   135 2018/08/20 15:25 ds9 13mom0mask.fits
+   174 2018/10/08 16:57 cd products/
+   175 2018/10/08 16:57 ls *.reg
+   223 2019/02/27 9:47 cd ../../13co/products/
+   224 2019/02/27 9:47 ds9 mask_imfit_13co_pix_2_Tmb.fits &
+[K   224 2019/02/27 9:47 ds9 mask_imfit_13co_pix_2_Tmb.fits &
+   225 2019/02/27 9:47 ds9 mom0_13co_pix_2_Tmb.fits &
+   280 2019/06/07 14:03 cd ../../13co/products/
+   281 2019/06/07 14:03 gits
+   282 2019/06/07 14:04 gitlist
+  1117 2019/06/20 9:23 cd products/
+  1118 2019/06/20 9:23 ls *.py
+  1119 2019/06/20 9:23 vim coldens.py
+  1120 2019/06/20 9:28 vim coldens.py
+  1124 2019/06/20 9:32 cd ../../13co/products/
+  1125 2019/06/20 9:32 vim mask13_peak_regrid13_mask_imfit_12co_pix_2_Tmb.mir/history
+  1085 2019/06/21 11:45 cd ../../13co/products/
+  1086 2019/06/21 11:45 ds9 mask_imfit_13co_pix_2_Tmb.fits
+  1087 2019/06/24 19:55 ds9 mask_imfit_13co_pix_2_Tmb.fits
+   657 2019/06/25 13:54 cd ../../13co/products/
+   658 2019/06/25 13:55 prthd in=mask_imfit_13co_pix_2_Tmb.mir
+   663 2019/06/25 14:58 cd -
+   664 2019/06/25 14:58 prthd in=mask_imfit_c18o_pix_2_Tmb.mir
+   665 2019/06/25 14:58 vim mask_imfit_13co_pix_2_Tmb.mir/history
+   755 2019/07/05 14:06 cd ../../13co/products/
+  1252 2019/07/05 14:07 cd ../../13co/products/
+  1253 2019/07/05 14:07 ls *.fits
+  1254 2019/07/05 14:08 ls *.py
+  1255 2019/07/05 14:08 vim coldens.py
+  1256 2019/07/05 14:08 ls tau13peak.fits
+  1257 2019/07/05 14:20 ds9 tau13peak.fits
+  1258 2019/07/05 14:28 vim GAScores.txt
