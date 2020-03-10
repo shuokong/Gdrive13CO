@@ -2950,3 +2950,19 @@
     67 2020/03/09 22:37 open .
     64 2020/03/09 22:34 vim smoothed_13CO_spectra_at_Lane_cores.py
     65 2020/03/09 22:38 gits
+    66 2020/03/09 22:38 gitc 'smooth to SMT beam size and get HH400-S and Stick cores spectra'
+    67 2020/03/09 22:38 gpthis
+    72 2020/03/10 11:06 cd -
+   144 2020/03/10 15:13 cd ../../13co/products/
+   145 2020/03/10 15:13 lst
+   146 2020/03/10 15:13 rm -rf convol28_mask_imfit_13co_pix_2_Tmb.*
+   147 2020/03/10 15:14 vim log.sh
+   148 2020/03/10 15:23 convol map=mask_imfit_13co_pix_2_Tmb.mir fwhm=70 options=final out=convol70_mask_imfit_13co_pix_2_Tmb.mir
+   149 2020/03/10 15:26 mirout convol70_mask_imfit_13co_pix_2_Tmb.mir
+   150 2020/03/10 15:27 lst
+   151 2020/03/10 15:27 gits
+   152 2020/03/10 15:27 vim smoothed_13CO_spectra_at_Lane_cores.py
+   153 2020/03/10 15:27 python smoothed_13CO_spectra_at_Lane_cores.py
+   154 2020/03/10 15:28 open Lane_cores_smoothed_spectra/
+   181 2020/03/10 15:38 cd ../../../13co/products/
+   182 2020/03/10 15:38 gits
