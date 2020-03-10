@@ -2872,3 +2872,81 @@
   1256 2019/07/05 14:08 ls tau13peak.fits
   1257 2019/07/05 14:20 ds9 tau13peak.fits
   1258 2019/07/05 14:28 vim GAScores.txt
+   886 2019/07/11 17:31 cd products/
+   887 2019/07/11 17:31 ls
+   888 2019/07/11 17:31 du -ch * | grep G
+   889 2019/07/11 17:32 rm -rf 13co_CAMRAonly_pix_1_Tmb.fits
+   890 2019/07/11 17:33 rm -rf 13co_pix_2_Tmb_sens.*
+   891 2019/07/11 17:33 rm -rf clip*
+   892 2019/07/11 17:33 rm -rf convol*
+   893 2019/07/11 22:02 vim furthersouth_coldens13_tauinte.mir/history
+   894 2019/07/11 22:02 rm -rf furthersouth_*
+   895 2019/07/11 22:03 rm -rf north_*
+   896 2019/07/11 22:03 rm -rf nostokes_regrid_12co_convol_12co_mask_imfit_13co_pix_2_Tmb.fits
+   897 2019/07/11 22:03 rm -rf regrid*
+   898 2019/07/11 22:04 rm -rf south_*
+   899 2019/07/11 22:04 rm -rf specsmooth_0p25_convol_12co_mask_imfit_13co_pix_2_Tmb.*
+   900 2019/07/11 22:06 ls
+   901 2019/07/11 22:06 du -ch * | grep G
+  1621 2019/07/17 13:53 cd ../../../13co/products/
+  1622 2019/07/17 13:53 vim showmom0.py
+    52 2019/09/11 23:50 cd ../13co/products/
+    53 2019/09/11 23:50 ls *.py
+    54 2019/09/11 23:55 vim mask13_peak_regrid13_mask_imfit_12co_pix_2_Tmb.mir/history
+    55 2019/09/12 0:05 vim lo
+    56 2019/09/12 0:05 vim log.sh
+     4 2019/11/28 14:53 cd ../../13co/products/
+     5 2019/11/28 14:53 vim log.sh
+     4 2020/02/13 16:04 cd products/
+     5 2020/02/13 16:04 mds9 peak_13co_pix_2_Tmb.fits
+     6 2020/02/13 16:05 mv ~/Downloads/hlsp_orion_hst_acs_colorimage_b_v1_drz.fits
+     7 2020/02/13 16:05 mv ~/Downloads/hlsp_orion_hst_acs_colorimage_b_v1_drz.fits .
+     8 2020/02/13 16:05 mds9 -rgb
+     9 2020/02/13 16:17 lst
+    10 2020/02/13 16:17 rm hlsp_orion_hst_acs_colorimage_b_v1_drz.fits
+    11 2020/02/13 16:18 open rgb13_with_dust.png
+    12 2020/02/13 16:18 mds9 -restore rgb.bck
+    17 2020/02/13 16:24 cd ~/GoogleDrive/13co/products/
+    18 2020/02/13 16:24 vim remove4axis.py
+    19 2020/02/13 16:24 ls *.fits
+    20 2020/02/13 16:25 mds9 mom0_13co_pix_2_Tmb.fits
+    21 2020/02/13 16:25 vim remove34axes_pixel6.py
+    22 2020/02/13 16:25 vim remove4axis.py
+    23 2020/02/13 16:25 cp remove4axis.py remove3axis.py
+    24 2020/02/13 16:26 vim remove3axis.py
+    25 2020/02/13 16:26 vim remove3axis.py
+    26 2020/02/13 16:26 lst
+    27 2020/02/13 16:26 python remove3axis.py
+    28 2020/02/13 16:27 lst
+    29 2020/02/13 16:27 mds9 novel_peak_13co_pix_2_Tmb.fits
+    30 2020/02/13 16:33 mds9 wise3.fits
+    31 2020/02/13 16:34 cp ~/GoogleDrive/AncillaryData/WISE/wise4.fits .
+    32 2020/02/13 16:34 mds9 wise4.fits
+    33 2020/02/13 16:44 rm wise*.fits
+    34 2020/02/13 16:44 lst
+     1 2020/02/14 16:18 source ~/.cshrc
+    13 2020/02/13 16:19 bash
+    14 2020/02/17 9:56 lst
+    15 2020/02/17 9:56 mv ~/Downloads/OrionA_* .
+    16 2020/02/17 9:56 lst
+    17 2020/02/17 9:57 open OrionA_2.pdf
+     6 2020/02/23 23:30 exit
+    58 2020/03/09 22:27 cd ../../../13co/products/
+    59 2020/03/09 22:27 gits
+    60 2020/03/09 22:27 lst
+    61 2020/03/09 22:27 ls *.fits
+    57 2020/03/09 22:29 cd ../../../13co/products/
+    62 2020/03/09 22:28 convol map=mask_imfit_13co_pix_2_Tmb.mir fwhm=28 options=final out=convol28_mask_imfit_13co_pix_2_Tmb.mir
+    58 2020/03/09 22:29 vim smoothed_C18O_spectra_at_Lane_cores.py
+    59 2020/03/09 22:33 mv smoothed_C18O_spectra_at_Lane_cores.py smoothed_13CO_spectra_at_Lane_cores.py
+    60 2020/03/09 22:33 git add -f smoothed_13CO_spectra_at_Lane_cores.py
+    63 2020/03/09 22:32 mirout convol28_mask_imfit_13co_pix_2_Tmb.mir
+    61 2020/03/09 22:33 gits
+    62 2020/03/09 22:33 vim show_13CO_spectra_at_Lane_cores.py
+    63 2020/03/09 22:34 gits
+    64 2020/03/09 22:34 mds9 convol28_mask_imfit_13co_pix_2_Tmb.fits
+    65 2020/03/09 22:36 lst
+    66 2020/03/09 22:36 python smoothed_13CO_spectra_at_Lane_cores.py
+    67 2020/03/09 22:37 open .
+    64 2020/03/09 22:34 vim smoothed_13CO_spectra_at_Lane_cores.py
+    65 2020/03/09 22:38 gits
