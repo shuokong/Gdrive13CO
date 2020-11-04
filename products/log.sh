@@ -2966,3 +2966,70 @@
    154 2020/03/10 15:28 open Lane_cores_smoothed_spectra/
    181 2020/03/10 15:38 cd ../../../13co/products/
    182 2020/03/10 15:38 gits
+   183 2020/03/10 15:38 gitc 'smooth to 70 arcsec'
+   184 2020/03/10 15:38 gpthis
+    64 2020/03/25 21:35 cd ../../13co/products/
+    65 2020/03/25 21:35 mds9 mask_imfit_13co_pix_2_Tmb.fits
+    66 2020/03/25 22:32 mds9 mask_imfit_13co_pix_2_Tmb.fits &
+    66 2020/03/25 22:32 mds9 mask_imfit_13co_pix_2_Tmb.fits &
+    67 2020/03/25 22:35 vim log.sh
+    68 2020/03/25 22:38 imsub in=mask_imfit_13co_pix_2_Tmb.mir out=stick_mask_imfit_13co_pix_2_Tmb.mir region="abspix,boxes(588,1158,1326,1902)"
+    69 2020/03/25 22:38 smir
+    70 2020/03/25 22:38 imsub in=mask_imfit_13co_pix_2_Tmb.mir out=stick_mask_imfit_13co_pix_2_Tmb.mir region="abspix,boxes(588,1158,1326,1902)"
+    71 2020/03/25 22:39 mirout stick_mask_imfit_13co_pix_2_Tmb.mir
+    72 2020/03/25 22:39 mv stick_mask_imfit_13co_pix_2_Tmb.fits ../../omc6datacollection/CARMA_NRO45_combine/
+    73 2020/03/25 22:39 rm -rf stick_mask_imfit_13co_pix_2_Tmb.mir/
+    12 2020/04/03 22:25 cd ../../../13co/products/
+    13 2020/04/03 22:26 mds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits &
+    13 2020/04/03 22:26 mds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits &
+     1 2020/04/03 22:29 source ~/.cshrc
+     8 2020/06/05 20:52 cd ../../13co/products/
+     9 2020/06/05 20:52 lst
+    10 2020/06/05 20:52 mds9 mask_imfit_13co_pix_2_Tmb.fits
+    11 2020/06/08 15:40 ls -d *.mir
+    12 2020/06/08 15:41 mds9 mask_imfit_13co_pix_2_Tmb.fits &
+    13 2020/06/08 15:43 which fits
+    14 2020/06/08 15:43 smir
+    15 2020/06/08 15:43 prthd in=mask_imfit_13co_pix_2_Tmb.mir
+    16 2020/06/08 15:45 imsub in=mask_imfit_13co_pix_2_Tmb.mir out=omc123_13co.mir region="boxes(1,3389,2438,4261)"
+    17 2020/06/08 15:46 lst
+    18 2020/06/08 15:46 vim omc123_13co.mir/history
+    19 2020/06/08 15:47 vim remove3axis.py
+    20 2020/06/08 15:47 gits
+    21 2020/06/08 15:48 cp remove3axis.py removehistory.py
+    22 2020/06/08 15:48 vim removehistory.py
+    23 2020/06/08 15:48 vim remove3axis.py
+    24 2020/06/08 15:48 vim removehistory.py
+    25 2020/06/08 15:49 vim removehistory.py
+    26 2020/06/08 15:50 vim removehistory.py
+    27 2020/06/08 15:50 python removehistory.py
+    28 2020/06/08 15:50 which python
+    29 2020/06/08 15:50 vim removehistory.py
+    30 2020/06/08 15:51 vim removehistory.py
+    31 2020/06/08 15:52 python removehistory.py
+    32 2020/06/08 15:52 mirout omc123_13co.mir
+    33 2020/06/08 15:52 lst
+    34 2020/06/08 15:52 python removehistory.py
+    35 2020/06/08 15:52 lst
+    36 2020/06/08 15:52 mds9 omc123_13co_Tmb.fits
+    37 2020/06/08 15:57 rm -rf omc123_13co.*
+    38 2020/06/08 15:57 lst
+    39 2020/06/08 15:57 cp removehistory.py ../../12co/products/
+    65 2020/06/08 16:07 cd ../../13co/products/
+    66 2020/06/08 16:07 lst
+    67 2020/06/08 16:07 mds9 omc123_13co_Tmb.fits
+    27 2020/07/02 10:15 cd ../../13co/products/
+    28 2020/07/02 10:15 ls *.fits
+    29 2020/07/02 10:16 mds9 mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+    34 2020/07/02 10:23 cd ../../../13co/products/
+    35 2020/07/02 10:24 grep imsub log.sh | grep han1
+    36 2020/07/02 10:24 grep imsub log.sh
+    37 2020/07/02 10:25 imsub in=mask_han1_mask_imfit_13co_pix_2_Tmb.mir out=stick_mask_han1_imfit_13co_pix_2_Tmb.mir region="abspix,boxes(588,1158,1326,1902)"
+    38 2020/07/02 10:25 smir
+    39 2020/07/02 10:25 imsub in=mask_han1_mask_imfit_13co_pix_2_Tmb.mir out=stick_mask_han1_imfit_13co_pix_2_Tmb.mir region="abspix,boxes(588,1158,1326,1902)"
+    40 2020/07/02 10:25 mirin mask_han1_mask_imfit_13co_pix_2_Tmb.fits
+    41 2020/07/02 10:32 imsub in=mask_han1_mask_imfit_13co_pix_2_Tmb.mir out=stick_mask_han1_imfit_13co_pix_2_Tmb.mir region="abspix,boxes(588,1158,1326,1902)"
+    42 2020/07/02 10:33 mirout stick_mask_han1_imfit_13co_pix_2_Tmb.mir
+    43 2020/07/02 10:33 mv stick_mask_han1_imfit_13co_pix_2_Tmb.* ../../c18o/products/pvcuts/
+     7 2020/11/03 15:53 cd ../../13co/products/
+     8 2020/11/03 15:54 vim log.sh
